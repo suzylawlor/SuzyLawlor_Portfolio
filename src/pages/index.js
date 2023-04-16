@@ -20,7 +20,7 @@ import React, { useState, useEffect } from "react";
 
 function Home() {
   const [darkMode, setDarkMode] = useState(true);
-  const [imageSrc, setImageSrc] = useState("/public/Homepage/Avatar.png");
+  const [imageSrc, setImageSrc] = useState("/Homepage/Avatar.png");
   const [imageChatSrc, setImageChatSrc] = useState(darkChat);
   const [imageTodoSrc, setImageTodoSrc] = useState(darkMoon);
   const [imageKeyboardSrc, setImageKeyboardSrc] = useState(darkKeyboard);
@@ -40,7 +40,7 @@ function Home() {
 
   useEffect(() => {
     if (darkMode) {
-      setImageSrc("/Avatar.png");
+      setImageSrc("/Homepage/Avatar.png");
     } else {
       setImageSrc("/Homepage/Sunglasses.png");
     }
