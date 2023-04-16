@@ -1,0 +1,351 @@
+.resume-page * {
+  outline: none;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body {
+  background-color: #fffcf2;
+}
+.resume-page a {
+  
+  color: #fffcf2;
+  display: block;
+  transition-duration: 0.3s;
+}
+
+.resume-page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resume-page h3 {
+  color: #fbd1a2;
+  margin: 10px 0;
+  text-transform: lowercase;
+  font-size: 1.25em;
+}
+
+.resume {
+  width: 960px;
+  background: #184e77;
+  color: #fffcf2;
+  margin: 20px auto;
+  box-shadow: 10px 10px #012a4a;
+  position: relative;
+  display: flex;
+}
+
+.resume .base > div,
+.resume .func > div {
+  padding-bottom: 10px;
+}
+.resume .base > div:last-of-type,
+.resume .func > div:last-of-type {
+  padding-bottom: 0;
+}
+.resume .base {
+  width: 30%;
+  padding: 30px 15px;
+  background: #003d5b;
+  
+}
+.resume .base .profile {
+background: #33658a;
+padding: 30px 15px 40px 15px;
+margin: -30px -15px 45px -15px;
+position: relative;
+z-index: 2;
+}
+.resume .base .profile::after {
+content: "";
+position: absolute;
+background:#184e77;
+width: 100%;
+height: 30px;
+bottom: -15px;
+left: 0;
+transform: skewY(-5deg);
+z-index: -1;
+
+}
+.resume .base .profile .photo img {
+width: 80%;
+
+}
+.resume .base .profile .photo {
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.resume .base .profile .info {
+text-align: center;
+color: #fffcf2;
+}
+.resume .base .profile .info .name {
+margin-top: 10px;
+margin-bottom: 0;
+font-size: 1.75em;
+text-transform: lowercase;
+color: #fbd1a2;
+}
+.resume .base .profile .info .job {
+margin-top: 10px;
+margin-bottom: 0;
+font-size: 1.5em;
+text-transform: lowercase;
+color: #30638e;
+}
+.resume .base .contact div {
+line-height: 28px;
+}
+.resume .base .contact div a:hover {
+color: #ffb563;
+}
+
+.resume .base .contact div i {
+color: #ffb563;
+width: 20px;
+height: 20px;
+font-size: 20px;
+text-align: center;
+margin-right: 15px;
+transition-duration: 0.3s;
+}
+.resume .base .contact div span {
+position: relative;
+}
+
+
+.resume .base .follow div {
+line-height: 28px;
+}
+.resume .base .follow div a:hover {
+color: #ffb563;
+}
+
+.resume .base .follow div i {
+color: #ffb563;
+width: 20px;
+height: 20px;
+font-size: 20px;
+text-align: center;
+margin-right: 15px;
+transition-duration: 0.3s;
+}
+.resume .base .follow div span {
+position: relative;
+}
+
+.resume .base .interests div {
+line-height: 28px;
+}
+.resume .base .interests div :hover {
+color: #ffb563;
+}
+
+.resume .base .interests div i {
+color: #ffb563;
+width: 20px;
+height: 20px;
+font-size: 20px;
+text-align: center;
+margin-right: 15px;
+transition-duration: 0.3s;
+}
+.resume .base .interests div span {
+position: relative;
+}
+
+.resume .base .contact {
+margin-top: 60px;
+}
+.resume .base .contact,
+.resume .base .follow {
+margin-bottom: 60px;
+}
+
+.resume .func {
+  width: 100%;
+  padding: 30px;
+}
+
+.resume .func:hover > div:hover h3 i {
+  transform: scale(1.25);
+}
+
+.resume .func:hover > div:not(:hover) {
+  opacity: 0.5;
+}
+.resume .func h3 {
+  transition-duration: 0.3s;
+  margin-top: 0;
+}
+.resume .func h3 i {
+  color: #003d5b;
+  background: #ffb563;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  line-height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition-duration: 0.3s;
+}
+.resume .func .work,
+.resume .func .edu {
+  float: left;
+}
+.resume .func .work small,
+.resume .func .edu small {
+  display: block;
+  opacity: 0.7;
+}
+.resume .func .work ul li,
+.resume .func .edu ul li {
+  position: relative;
+  margin-left: 15px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+}
+.resume .func .work ul li:hover::before,
+.resume .func .edu ul li:hover::before {
+  animation: circle 1.2s infinite;
+}
+.resume .func .work ul li:hover span,
+.resume .func .edu ul li:hover span {
+  color: #ffb563;
+}
+
+@keyframes circle {
+  from {
+    box-shadow: 0 0 0 0px yellow;
+  }
+  to {
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+}
+
+.resume .func .work ul li:last-of-type,
+.resume .func .edu ul li:last-of-type {
+  padding-bottom: 3px;
+}
+
+.resume .func .work ul li::before,
+.resume .func .work ul li::after,
+.resume .func .edu ul li::before,
+.resume .func .edu ul li::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.resume .func .work ul li::before,
+.resume .func .edu ul li::before {
+  width: 7px;
+  height: 7px;
+  border: 3px solid white;
+  background: #f79256;
+  border-radius: 50%;
+  left: 3px;
+  z-index: 1;
+}
+.resume .func .work ul li::after,
+.resume .func .edu ul li::after {
+  width: 3px;
+  height: 100%;
+  background: white;
+  left: 5px;
+  top: 0;
+}
+
+.resume .func .work {
+  width: 48%;
+  background: #1a759f;
+  padding: 15px;
+  margin: 0 4% 15px 0;
+}
+
+.resume .func .edu {
+  width: 48%;
+  background: #1a759f;
+  padding: 15px;
+}
+
+.resume .func .skills-prog {
+  clear: both;
+  background: #1a759f;
+  padding: 15px;
+}
+
+.resume .func .skills-soft {
+  clear: both;
+  background: #1a759f;
+  padding: 15px;
+  margin: 15px 0 0px;
+  width: 100%;
+}
+.resume .func .skills-soft::after {
+  content: "";
+  display: block;
+  height: 10px; 
+  background-color: #1a759f;
+  margin-top: 15px;
+}
+.resume .func .skills-soft ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.resume .func .skills-soft ul li {
+  position: relative;
+  display: inline-block;
+  width: 15%;
+  margin: 0 0.2%;
+  font-size: 0.8em;
+  
+}
+.resume .func .skills-soft ul li:hover svg .cbar {
+  stroke: #d9ed92;
+  stroke-width: 4px;
+}
+.resume .func .skills-soft ul li:hover span,
+.resume .func .skills-soft ul li:hover small {
+  transform: scale(1.5);
+  color: #003d5b;
+  font-weight: 700;
+}
+.resume .func .skills-soft ul li svg {
+  width: 100%;
+  fill: transparent;
+  transform: rotate(-90deg);
+  
+}
+.resume .func .skills-soft ul li svg .cbar {
+  stroke-width: 3px;
+  stroke: #ffa200;
+  stroke-linecap: round;
+}
+.resume .func .skills-soft ul li span,
+.resume .func .skills-soft ul li small {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 52%;
+  transition-duration: 0.3s;
+}
+.resume .func .skills-soft ul li span {
+  top: 40%;
+}
+
+
+
+
+
