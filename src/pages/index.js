@@ -6,7 +6,6 @@ import { FaMusic } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { AiOutlineMessage } from "react-icons/ai";
 
-
 import Image from "next/image";
 import darkMoon from "/public/Homepage/darkMoon.png";
 import lightMoon from "/public/Homepage/lightMoon.png";
@@ -21,7 +20,7 @@ import React, { useState, useEffect } from "react";
 
 function Home() {
   const [darkMode, setDarkMode] = useState(true);
-  const [imageSrc, setImageSrc] = useState("/public/Avatar.png");
+  const [imageSrc, setImageSrc] = useState("/Homepage/Avatar.png");
   const [imageChatSrc, setImageChatSrc] = useState(darkChat);
   const [imageTodoSrc, setImageTodoSrc] = useState(darkMoon);
   const [imageKeyboardSrc, setImageKeyboardSrc] = useState(darkKeyboard);
@@ -58,17 +57,17 @@ function Home() {
       setImageTodoSrc(lightMoon);
     }
 
-     if (darkMode) {
-       setImageKeyboardSrc(darkKeyboard);
-     } else {
-       setImageKeyboardSrc(lightKeyboard);
-     }
+    if (darkMode) {
+      setImageKeyboardSrc(darkKeyboard);
+    } else {
+      setImageKeyboardSrc(lightKeyboard);
+    }
 
-      if (darkMode) {
-        setImageQuoteSrc(darkQuotes);
-      } else {
-        setImageQuoteSrc(lightQuote);
-      }
+    if (darkMode) {
+      setImageQuoteSrc(darkQuotes);
+    } else {
+      setImageQuoteSrc(lightQuote);
+    }
   }, [darkMode]);
 
   return (
