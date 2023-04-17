@@ -128,7 +128,7 @@ function Home() {
             </ul>
           </nav>
 
-          <div className="text-center p-10 py-10">
+          <div className="text-center p-6 md:p-10">
             <h2
               style={{ position: "relative", zIndex: 1 }}
               className="text-4xl md:text-8xl py-2 text-orange-200 font-medium dark:text-blue-400"
@@ -168,15 +168,19 @@ function Home() {
                 <AiFillGithub />
               </a>
             </div>
-
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-40 h-40 md:w-96 md:h-96 relative overflow-hidden mt-20">
+          </div>
+        </section>
+        <section>
+          <div className="mx-auto md:w-3/5 lg:w-1/2 flex justify-center">
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-40 h-40 md:w-96 md:h-96 relative overflow-hidden md:-mt-32 lg:-mt-48">
               <Image src={imageSrc} layout="fill" objectFit="cover" />
             </div>
           </div>
+          
         </section>
-        <section className="px-4 md:px-0">
+        <section className="px-4 md:px-10">
           <div className="text-center">
-            <h3 className="text-3xl py-1 dark:text-gray-50">A bit about me.</h3>
+            <h3 className="text-3xl py-10 dark:text-gray-50">A bit about me.</h3>
           </div>
           <div className="flex flex-col md:flex-row md:justify-center lg:gap-10">
             <div className="text-center shadow-sm shadow-pink-400 p-6 md:p-10 rounded-xl my-10 bg-orange-50 dark:bg-gray-800 flex-1">
