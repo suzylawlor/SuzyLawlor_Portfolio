@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -27,6 +21,3 @@ a {
   font-family: "burtons";
   src: url("/Burtons.otf");
 }
-
-
-
