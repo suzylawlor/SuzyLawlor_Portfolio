@@ -78,7 +78,7 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-orange-50 px-10 pt-10 dark:bg-gray-800 md:px-20 lg:px-40">
-        <section className=" relative min-h-screen">
+        <section className="relative vh-100 min-h-100">
           <div
             style={styles.circle}
             className={`absolute top-1 left-1/3 transform -translate-x-1/2 -translate-y-1/2 z-0 w-64 h-64 rounded-full blur-3xl ${
