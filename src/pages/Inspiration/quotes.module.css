@@ -133,6 +133,8 @@
 }
 
 .container {
+  position: relative;
+  overflow: hidden;
   max-width: 800px;
   background-color: #0a9396;
   padding: 50px 40px;
