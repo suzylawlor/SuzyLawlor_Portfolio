@@ -1,4 +1,3 @@
-
 .todo-body {
   color: black;
   font-family: "Roboto", sans-serif;
@@ -227,3 +226,76 @@ select {
   right: 20px;
 }
 
+/* Set the font size and padding to be smaller on mobile */
+@media screen and (max-width: 600px) {
+  .todo-body {
+    padding: 5%;
+  }
+
+  header {
+    font-size: 2rem;
+  }
+
+  form input,
+  form button {
+    font-size: 1.5rem;
+  }
+
+  .todo {
+    font-size: 1.5rem;
+  }
+
+  .select {
+    margin: 0.5rem;
+  }
+
+  select {
+    width: 7rem;
+    padding: 0.25rem;
+  }
+
+  .twinkling {
+    background-size: 500px 500px;
+  }
+
+  .clouds {
+    background-size: 2500px 2500px;
+  }
+}
+
+/* Set the font size and padding to be larger on large screens */
+@media screen and (min-width: 1200px) {
+  .todo-body {
+    padding: 15%;
+  }
+
+  header {
+    font-size: 6rem;
+  }
+
+  form input,
+  form button {
+    font-size: 3rem;
+  }
+
+  .todo {
+    font-size: 3rem;
+  }
+
+  .select {
+    margin: 1.5rem;
+  }
+
+  select {
+    width: 15rem;
+    padding: 1rem;
+  }
+
+  .twinkling {
+    background-size: 1500px 1500px;
+  }
+
+  .clouds {
+    background-size: 7500px 7500px;
+  }
+}
