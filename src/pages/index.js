@@ -151,7 +151,7 @@ function Home() {
             </p>
             <div
               style={{ position: "relative", zIndex: 1 }}
-              className="text-3xl md:text-5xl flex justify-center gap-8 md:gap-16 py-3 text-gray-50 dark:text-gray-50"
+              className="text-3xl md:text-5xl flex justify-center gap-8 md:gap-16 py-3 text-gray-50 dark:text-gray-50 mb-4 md:mb-0"
             >
               <a
                 href="https://www.linkedin.com/in/suzy-lawlor"
@@ -176,11 +176,12 @@ function Home() {
               <Image src={imageSrc} layout="fill" objectFit="cover" />
             </div>
           </div>
-          
         </section>
         <section className="px-4 md:px-10">
           <div className="text-center">
-            <h3 className="text-3xl py-10 dark:text-gray-50">A bit about me.</h3>
+            <h3 className="text-3xl py-10 dark:text-gray-50">
+              A bit about me.
+            </h3>
           </div>
           <div className="flex flex-col md:flex-row md:justify-center lg:gap-10">
             <div className="text-center shadow-sm shadow-pink-400 p-6 md:p-10 rounded-xl my-10 bg-orange-50 dark:bg-gray-800 flex-1">
