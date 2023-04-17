@@ -5,16 +5,16 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  max-height: 100vh;
   background: #005f73;
   overflow: hidden;
 }
 
 .glowing {
   position: relative;
-  width: 100%;
-  height: 550px;
-  margin: -150px;
+  width: 30%;
+  height: 10%;
+  margin: 50px auto;
   transform-origin: right;
   animation: colorChange 5s linear infinite;
 }
@@ -136,9 +136,9 @@
   position: relative;
   overflow: hidden;
   max-width: 800px;
-  background-color: #0a9396;
+  background-color: #1fa73f;
   padding: 50px 40px;
-  box-shadow: 0 20px 65px rgba(87, 11, 16, 0.5);
+  box-shadow: 0 20px 65px rgba(38, 210, 110, 0.5);
   position: relative;
   border-radius: 8px;
   text-align: center;
@@ -175,7 +175,7 @@
   border-radius: 5px;
   font-size: 18px;
   font-weight: 600;
-  color: #005f73;
+  color: #4d9e1e;
   cursor: pointer;
 }
 
