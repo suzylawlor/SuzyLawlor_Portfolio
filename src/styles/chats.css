@@ -18,7 +18,11 @@
 }
 
 .ce-chat-title {
-  background-color: red !important;
+  background-color: #000814 !important;
+}
+
+.ce-chat-list-mobile-option span {
+  color: #f5efe8 !important;
 }
 
 .ce-chat-form-container {
