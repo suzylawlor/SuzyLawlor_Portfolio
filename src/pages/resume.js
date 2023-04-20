@@ -44,7 +44,7 @@ function Resume() {
                 </div>
                 <div className="website">
                   <a
-                    href="suzy-lawlor-portfolio-ftaikjmwo-suzylawlor.vercel.app"
+                    href="https://suzy-lawlor-portfolio-suzylawlor.vercel.app/"
                     target="_blank"
                   >
                     {" "}
