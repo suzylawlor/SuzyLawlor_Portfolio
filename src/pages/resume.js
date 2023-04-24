@@ -19,7 +19,7 @@ function Resume() {
                 </div>
                 <div className="info">
                   <h1 className="name">Suzy Lawlor</h1>
-                  <h2 classNames="job">Frontend Web Designer</h2>
+                  <h2 classNames="job">Web Developer</h2>
                 </div>
               </div>
               <div className="contact">
