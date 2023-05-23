@@ -1,31 +1,52 @@
+
+ /* Remove outlines */
 .resume-page * {
   outline: none;
 }
 
+/* Load the Montserrat font from the Google Fonts API */
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
+/* Set the background color of the body element to a light beige color */
 body {
   background-color: #fffcf2;
 }
+
+/* All links (a elements) within the .resume-page class: 
+Light beige as background, 
+display as blocks (so they take up the full width of their container), 
+add a smooth 0.3 second transition effect to any CSS properties that change on hover or focus. */
 .resume-page a {
   
   color: #fffcf2;
   display: block;
   transition-duration: 0.3s;
 }
-
+/* All unordered lists (ul elements) within the .resume-page class: 
+Remove default bullet point list-style, 
+remove any padding that may be added by the browser. */
 .resume-page ul {
   list-style-type: none;
   padding: 0;
 }
-
+/* Select all h3 elements within the .resume-page class: 
+Set text color to light orange, 
+add top and bottom margin of 10 pixels, 
+convert text to lowercase using the text-transform property, 
+set font size to 1.25 times the default size.*/
 .resume-page h3 {
   color: #fbd1a2;
   margin: 10px 0;
   text-transform: lowercase;
   font-size: 1.25em;
 }
-
+/* Set width to 960 pixels, 
+background color to dark blue-gray, 
+text color to light beige, 
+add margin of 20 pixels on top and bottom, center it horizontally using the auto value for the left and right margins. 
+Add box-shadow effect of 10 pixels to the right and bottom, 
+position box relative to its normal position in the document flow. 
+Set display property to flex to allow for flexible layout and positioning of its child elements.*/
 .resume {
   width: 960px;
   background: #184e77;
@@ -35,21 +56,32 @@ body {
   position: relative;
   display: flex;
 }
-
-.resume .base > div,
+/* Select direct child div elements that are descendants of elements with the classes .resume .base and .resume .func: 
+Add a bottom padding of 10 pixels */
 .resume .func > div {
   padding-bottom: 10px;
 }
+/* Select the last div element that is a direct child of elements with the classes .resume and .func: 
+Set the bottom padding to 0 pixels */
 .resume .base > div:last-of-type,
 .resume .func > div:last-of-type {
   padding-bottom: 0;
 }
+/* Select elements with the class .base that are descendants of elements with the class .resume. 
+Set width to 30% of the parent element, 
+add padding of 30 pixels on top and bottom and 15 pixels on left and right, 
+set background color to a dark blue color */
 .resume .base {
   width: 30%;
   padding: 30px 15px;
   background: #003d5b;
   
 }
+/* Select elements with the class .profile that are descendants of elements with the class .base and .resume:
+sets background color to lighter blue color, 
+add padding of 30 pixels on the top, 15 pixels on the left and right, and 40 pixels on the bottom. 
+set negative margins to adjust the position of the element
+set a higher z-index to layer it above other elements */
 .resume .base .profile {
 background: #33658a;
 padding: 30px 15px 40px 15px;
@@ -57,6 +89,16 @@ margin: -30px -15px 45px -15px;
 position: relative;
 z-index: 2;
 }
+/* Select the pseudo-element ::after of elements with the class .profile that are descendants of elements with the classes .base and .resume. 
+set content of the ::after pseudo-element to an empty string so the pseudo-element can be generated and rendered, 
+position the element absolutely, so to take it out of the normal flow of the document and positioned relative to its parent element, 
+set background color to a dark blue color,
+set width to 100% of its containing element's width (.profile element)
+set height to 30 pixels
+position bottom edge 15 pixels above its normal position
+position left edge at the leftmost position ensuring the pseudo-element starts from the left side
+apply skew transformation along the Y-axis by -5 degrees in a counter-clockwise direction, creating a slanted effect
+position behind other elements with a higher z-index value */
 .resume .base .profile::after {
 content: "";
 position: absolute;
@@ -69,20 +111,35 @@ transform: skewY(-5deg);
 z-index: -1;
 
 }
+/* Select img element that is a descendant the class .photo, .profile, .base and .resume
+set width of img element to 80% of its containing element's width */
 .resume .base .profile .photo img {
 width: 80%;
 
 }
+/* Select the .photo class that is a descendant of the class .profile, the class .base, and the class .resume
+display property of element to flex allowing element to become a flex container, enabling flexbox layout for its child elements
+justify-content property of the flex container to center to horizontally align flex items (child elements) within the flex container along the main axis
+align-items property of the flex container to center to vertically align the flex items (child elements) within the flex container along the cross axis */
 .resume .base .profile .photo {
 display: flex;
 justify-content: center;
 align-items: center;
 
 }
+/* Select the class .info that is a descendant of the class .profile, .base, .resume
+text-align property of the selected element to center
+text color to light beige */
 .resume .base .profile .info {
 text-align: center;
 color: #fffcf2;
 }
+/* Select the class .name that is a descendant of the class .info, .profile, .base, .resume
+add top margin of 10 pixels
+remove bottom margin, ensuring there is no spacing between the element and the content below it
+set font size to 1.75 times the default size
+convert text to lowercase using the text-transform property
+text color to light tan */
 .resume .base .profile .info .name {
 margin-top: 10px;
 margin-bottom: 0;
@@ -90,6 +147,12 @@ font-size: 1.75em;
 text-transform: lowercase;
 color: #fbd1a2;
 }
+/* Select the class .job that is a descendant of the class .info, .profile, .base, .resume
+add top margin of 10 pixels
+remove bottom margin, ensuring there is no spacing between the element and the content below it
+set font size to 1.5 times the default size
+convert text to lowercase using the text-transform property
+text color to light blue */
 .resume .base .profile .info .job {
 margin-top: 10px;
 margin-bottom: 0;
@@ -97,13 +160,25 @@ font-size: 1.5em;
 text-transform: lowercase;
 color: #30638e;
 }
+/* Select div elements that are within the class .contact, .base, .resume
+each line of text within the div elements will have a height of 28 pixels */
 .resume .base .contact div {
 line-height: 28px;
 }
+/* Select a elements that are descendants of the div elements within the class .contact, .base, .resume
+selects element when it is being hovered over
+change text color to light orange color when hovered over */
 .resume .base .contact div a:hover {
 color: #ffb563;
 }
-
+/* Select i elements that are descendants of the div elements within the class .contact, .base, .resume
+text color to light orange color 
+set width to 20 pixels
+set height to 20 pixels 
+set font size to 20 pixels
+text-align property of the selected element to center
+add right margin size of 15 pixels
+add 0.3 second transition effect to any CSS properties that change on hover or focus */
 .resume .base .contact div i {
 color: #ffb563;
 width: 20px;
@@ -113,18 +188,31 @@ text-align: center;
 margin-right: 15px;
 transition-duration: 0.3s;
 }
+/* Select span elements that are descendants of the div elements within the class .contact, .base, .resume
+set position of span elements relative to their normal position in the document flow */
 .resume .base .contact div span {
 position: relative;
 }
 
-
+/* Select div elements that are within the class .follow, .base, .resume
+each line of text within the div elements will have a height of 28 pixels */ 
 .resume .base .follow div {
 line-height: 28px;
 }
+/* Select a elements that are descendants of the div elements within the class .contact, .base, .resume
+selects element when it is being hovered over
+change text color to light orange color when hovered over */
 .resume .base .follow div a:hover {
 color: #ffb563;
 }
-
+/* Select i elements that are descendants of the div elements within the class .follow, .base, .resume
+text color to light orange color 
+set width to 20 pixels
+set height to 20 pixels 
+set font size to 20 pixels
+text-align property of the selected element to center
+add right margin size of 15 pixels
+add 0.3 second transition effect to any CSS properties that change on hover or focus */
 .resume .base .follow div i {
 color: #ffb563;
 width: 20px;
@@ -134,17 +222,30 @@ text-align: center;
 margin-right: 15px;
 transition-duration: 0.3s;
 }
+/* Select span elements that are descendants of the div elements within the class .follow, .base, .resume
+set position of span elements relative to their normal position in the document flow */
 .resume .base .follow div span {
 position: relative;
 }
-
+/* Select div elements that are within the class .interests, .base, .resume
+each line of text within the div elements will have a height of 28 pixels */ 
 .resume .base .interests div {
 line-height: 28px;
 }
+/* Select a elements that are descendants of the div elements within the class .interests, .base, .resume
+selects element when it is being hovered over
+change text color to light orange color when hovered over */
 .resume .base .interests div :hover {
 color: #ffb563;
 }
-
+/* Select i elements that are descendants of the div elements within the class .interests, .base, .resume
+text color to light orange color 
+set width to 20 pixels
+set height to 20 pixels 
+set font size to 20 pixels
+text-align property of the selected element to center
+add right margin size of 15 pixels
+add 0.3 second transition effect to any CSS properties that change on hover or focus */
 .resume .base .interests div i {
 color: #ffb563;
 width: 20px;
@@ -154,34 +255,56 @@ text-align: center;
 margin-right: 15px;
 transition-duration: 0.3s;
 }
+/* Select span elements that are descendants of the div elements within the class .interests, .base, .resume
+set position of span elements relative to their normal position in the document flow */
 .resume .base .interests div span {
 position: relative;
 }
-
+/* Select elements with the class .contact that are descendants of elements with the class .base, .resume:
+set margin top to 60 pixels */
 .resume .base .contact {
 margin-top: 60px;
 }
+/* Select elements with either the class .contact or .follow that are with in the class .base, .resume:
+set margin bottom to 60 pixels */
 .resume .base .contact,
 .resume .base .follow {
 margin-bottom: 60px;
 }
-
+/* Select elements with the class .func that are within the class .resume. 
+Set width to 100% of the parent element, 
+add padding of 30 pixels */
 .resume .func {
   width: 100%;
   padding: 30px;
 }
-
+/* Select i elements that are descendants of the h3 elements, div elements, within the class .func, .resume
+change the scale of h3 i element to 1.25 times its original size when hovered over */
 .resume .func:hover > div:hover h3 i {
   transform: scale(1.25);
 }
-
+/* Select div elements that are children of elements within the class .func, .resume
+set opacity value of 0.5 */
 .resume .func:hover > div:not(:hover) {
   opacity: 0.5;
 }
+/* Select h3 elements that are descendants of elements within the class .func, .resume
+add 0.3 second transition effect to any CSS properties that change on hover
+remove top margin, ensuring there is no spacing between the element and the content above it */
 .resume .func h3 {
   transition-duration: 0.3s;
   margin-top: 0;
 }
+/* Select i elements that are descendants of the h3 elements within the class .func, .resume
+text color to dark blue 
+background color to light orange
+set width, height and line height to 42 pixels
+set font size to 20 pixels
+make element appear as circle by setting its border-radius to 50%
+text-align property of the selected element to center
+vertically align content of element to the middle
+add right margin size of 8 pixels
+add 0.3 second transition effect to any CSS properties that change on hover */
 .resume .func h3 i {
   color: #003d5b;
   background: #ffb563;
@@ -195,6 +318,8 @@ margin-bottom: 60px;
   margin-right: 8px;
   transition-duration: 0.3s;
 }
+/* Select elements with either the class .work or .edu that are within the class .func, .resume:
+float elements to the left */
 .resume .func .work,
 .resume .func .edu {
   float: left;

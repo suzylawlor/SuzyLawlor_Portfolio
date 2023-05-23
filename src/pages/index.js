@@ -34,33 +34,10 @@ function Home() {
       setImageSrc("/Homepage/Sunglasses.png");
     }
   });
+
   // Render the following JSX code
   return (
     // Define a div with a conditional class based on darkMode
-    // Define the Head component with various metadata
-    // Define the main section with various classes
-    // Define three divs with different styles and classes
-    // Navigation bar
-    // Page title
-    // Navigation links
-    // Dark mode toggle button
-    // Resume link
-    // Main section
-    // Page title
-    // Page subtitle
-    // Page content
-    // Social media links
-    // Display headshot
-    // Create three div elements containing content listing skills
-    // Use shadow-* and rounded-xl classes to give a shadow and rounded borders to the elements.
-    // Use bg-* and dark:bg-* classes to provide a different background color based on whether the user has dark mode enabled.
-    // Use text-* and dark:text-* classes to provide a different text color based on whether the user has dark mode enabled.
-    // Create paragraphs to list skills
-    // Define a new section
-    // Create a div with flex layout
-    // Create 4 divs with absolute position, covers width and height of parent element, and centered
-    // Each div contains project icon and link
-
     <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Suzy Lawlor</title>
@@ -68,32 +45,95 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {/* Define the main container element with custom styles */}
+      {/* Background color to a light orange shade */}
+      {/* add padding on the left and right sides of the container, with increasing values on larger screens */}
+      {/* add padding to the top and bottom of the container, with increasing values on medium to large screens */}
+      {/* set the background color to a dark gray shade in dark mode */}
       <main className="bg-orange-100 px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-16 md:pb-24 dark:bg-gray-800">
+        {/* Define a section element that takes up the full height of the screen on medium to large screens */}
         <section className="relative h-screen md:min-h-screen">
+          {/* Define a div element that will be positioned absolutely in the middle of the screen */}
+          {/* position div element 1/3 down and centered horizontally within the section element. */}
+          {/* center the div element by translating it 50% left and 50% up. */}
+          {/* set the z-index of the div element to 0 */}
+          {/* set width and height of div to 16 pixels on small screens and 64 pixels on medium to large screens. */}
+          {/* round the corners of the div element to create a circle */}
+          {/* Apply blur effect to div with strength of 3 pixels */}
+          {/* conditionally apply blending effect to the div element in light mode */}
+          {/* Apply filter effect to the div element */}
+          {/* add animation to div that starts after a delay of 1000 milliseconds. */}
+          {/* Apply custom styles to the circle */}
           <div
             style={styles.circle}
             className={`absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 w-16 h-16 md:w-64 md:h-64 rounded-full blur-3xl ${
               darkMode ? "" : "mix-blend-multiply"
             } filter animate-blob animation-delay-1000`}
           ></div>
+          {/* Define a div element that will be positioned absolutely in the middle of the screen */}
+          {/* position div element 1/2 down and centered horizontally within the section element. */}
+          {/* center the div element by translating it 50% left and 50% up. */}
+          {/* set the z-index of the div element to 0 */}
+          {/* set width and height of div to 16 pixels on small screens and 64 pixels on medium to large screens. */}
+          {/* round the corners of the div element to create a circle */}
+          {/* Apply blur effect to div with strength of 2 pixels */}
+          {/* conditionally apply blending effect to the div element in light mode */}
+          {/* Apply filter effect to the div element */}
+          {/* add animation to div that starts after a delay of 2000 milliseconds. */}
+          {/* Apply custom styles to the square */}
           <div
             style={styles.square}
             className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 w-16 h-16 md:w-64 md:h-64 rounded-full blur-2xl ${
               darkMode ? "" : "mix-blend-multiply"
             } filter animate-blob animation-delay-2000`}
           ></div>
+          {/* Define a div element that will be positioned absolutely in the middle of the screen */}
+          {/* position div element 1/4 down and centered horizontally within the section element. */}
+          {/* center the div element by translating it 50% left and 50% up. */}
+          {/* set the z-index of the div element to 0 */}
+          {/* set width and height of div to 16 pixels on small screens and 64 pixels on medium to large screens. */}
+          {/* round the corners of the div element to create a circle */}
+          {/* Apply blur effect to div with strength of 3 pixels */}
+          {/* conditionally apply blending effect to the div element in light mode */}
+          {/* Apply filter effect to the div element */}
+          {/* add animation to div that starts after a delay of 4000 milliseconds. */}
+          {/* Apply custom styles to the triangle */}
           <div
             style={styles.triangle}
             className={`absolute top-1/4 right-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 w-16 h-16 md:w-64 md:h-64 rounded-full blur-3xl ${
               darkMode ? "" : "mix-blend-multiply"
             } filter animate-blob animation-delay-4000`}
           ></div>
+          {/* Define a navigation bar */}
+          {/* Set text color to gray */}
+          {/* Set padding on the top and bottom of the element to 5 pixels on small screens and 10 pixels on medium screens and above */}
+          {/* Set margin on the bottom of the element to 8 pixels on small screens and 12 pixels on medium screens and above */}
+          {/* Set the element to display as a flex container with the child elements stacked vertically on small screens and as a row on medium screens and above */}
+          {/* Position child elements to be evenly spaced with space between them. */}
+          {/* Align child elements vertically in the center */}
+          {/* Set text color to gray-50 when dark mode is enabled. */}
+
           <nav className="text-gray-700 py-5 md:py-10 mb-8 md:mb-12 flex flex-col md:flex-row justify-between items-center dark:text-gray-50">
+            {/* Define h1 element */}
+            {/* Set the font family to burtons */}
+            {/* Set the font size to 1 rem on small screens and gradually increases to 4 rem on extra-large screens */}
+            {/* Set the margin on the bottom of the element to 2 pixels on small screens and removes it on medium screens and above */}
+
             <h1 className="font-burtons text-1xl md:text-2xl lg:text-3xl xl:text-4xl mb-2 md:mb-0">
               Developed by Suzy
             </h1>
+            {/* Define ul element */}
+            {/* Set the element to display as a flex container and align child elements vertically in the center*/}
+
             <ul className="flex items-center">
+              {/* Define li element */}
               <li>
+                {/* Conditionally render one of two icons, depending on whether darkMode is enabled */}
+                {/* Render a sun icon and moon icon from the react-icons/bs library */}
+                {/* Set the onClick handler to function that toggles the darkMode state */}
+                {/* Change the cursor to a pointer when hovering over the element */}
+                {/* Set font size to 1.25 rem on small screens and gradually increases to 3 rem on medium screens and above */}
+                {/* Set margin on the right side of the element to 4 pixels on small screens and gradually increases to 8 pixels on large screens and above */}
                 {darkMode ? (
                   <BsFillSunFill
                     onClick={() => setDarkMode(!darkMode)}
@@ -106,6 +146,13 @@ function Home() {
                   />
                 )}
               </li>
+              {/* Create a list item element */}
+              {/* Create an anchor element with a hyperlink to "/resume" and a target attribute set to "_blank */}
+              {/* Background gradient from cyan-700 to blue-400 */}
+              {/* Text size of extra large on medium and large screens, and large on small screens, text color of gray-50 */}
+              {/* Horizontal padding of 4 on small screens and 6 on medium and large screens, vertical padding of 2 on small screens and 3 on medium and large screens */}
+              {/* No border, rounded corners with a medium radius */}
+              {/* No left margin on small screens and a margin of 8 on medium and large screens */}
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-700 text-xl md:text-3xl to-blue-400 text-gray-50 px-4 md:px-6 py-2 md:py-3 border-none rounded-md ml-0 md:ml-8"
@@ -117,6 +164,13 @@ function Home() {
               </li>
             </ul>
           </nav>
+          {/* Create a div element */}
+          {/* Center text and add horizontal padding of 6 on small screens and 10 on medium and large screens */}
+          {/* Create a h2 element */}
+          {/* Text size of 4xl on small screens and 8xl on medium and large screens */}
+          {/* Vertical padding of 2 */}
+          {/* Text color of orange-200, font weight of medium,  */}
+          {/* No left margin on small screens and a margin of 8 on medium and large screens, text color of blue-400 if dark mode enabled */}
           <div className="text-center p-6 md:p-10">
             <h2
               style={{ position: "relative", zIndex: 1 }}
@@ -124,12 +178,25 @@ function Home() {
             >
               Suzy Lawlor
             </h2>
+            {/* Create a h3 element */}
+            {/* Text size of xl on small screens and 4xl on medium and large screens */}
+            {/* Vertical padding of 2 */}
+            {/* Text color of gray-900, text color of orange-100 when dark mode enabled */}
+
             <h3
               style={{ position: "relative", zIndex: 1 }}
               className="text-xl md:text-4xl py-2 text-gray-900 dark:text-orange-100"
             >
               Developer and designer.
             </h3>
+
+            {/* Create a p element */}
+            {/* Sets the position of the element to be relative to parent container, z-index of 1 */}
+            {/* Set font size to lg on small screens, and 3xl on medium and above screens */}
+            {/* Add padding of 5 to the top and bottom of the element, set line height to 8 */}
+            {/* Text color of gray-950, gray-200 when dark mode enabled */}
+            {/* Set the maximum width of the element to xl */}
+
             <p
               style={{ position: "relative", zIndex: 1 }}
               className="text-lg md:text-3xl py-5 leading-8 text-gray-950 dark:text-gray-200 max-w-xl mx-auto"
@@ -138,10 +205,21 @@ function Home() {
               Art and a background in digital content creation and marketing
               design.
             </p>
+
+            {/* Create a div element */}
+            {/* Sets the position of the element to be relative to parent container, z-index of 1 */}
+            {/* Set font size to 3xl on small screens, and 5xl on medium and above screens */}
+            {/* Make the element a flex container, horizontally center the child elements */}
+            {/* Set the gap between the child elements to 8 on small screens, and 16 on medium and above screens */}
+            {/* Add padding of 3 to the top and bottom of the element */}
+            {/* Set the text color to white */}
             <div
               style={{ position: "relative", zIndex: 1 }}
               className="text-3xl md:text-5xl flex justify-center gap-8 md:gap-16 py-3 text-gray-50 dark:text-gray-50 mb-4 md:mb-0"
             >
+              {/* Set hyperlink to Linkedin and GitHub profile */}
+              {/* Open in new tab and add security attributes to prevent malicious links */}
+              {/* Render Linkedin and Github icons from the react-icons/bs library */}
               <a
                 href="https://www.linkedin.com/in/suzy-lawlor"
                 target="_blank"
@@ -159,29 +237,64 @@ function Home() {
             </div>
           </div>
         </section>
+        {/* Create a section element */}
+        {/* Create a div element */}
+        {/* Center the div horizontally within its container by setting the margin-left and margin-right properties to auto */}
+        {/* Set width of div to 60% of its container width at medium screen sizes and up, 50% of its container width at large screen sizes and up */}
+        {/* Set the display property of the div to flex, center the div contents along the horizontal axis */}
+        {/* Create a div element */}
+        {/* Center the div horizontally */}
+        {/* Apply a linear gradient background */}
+        {/* Apply a border radius of 50% to the div, making it circular */}
+        {/* Set width and height of div to 40 pixels at small screen sizes and 96 pixels at medium screen sizes and up */}
+        {/* Set position of div to relative, which makes it a positioned element that is positioned relative to its normal position */}
+        {/* Hide any content that overflows the div */}
+        {/* Apply negative margin-top to the div at medium and large screen sizes, moving it upwards to overlap the content above it */}
+
         <section>
           <div className="mx-auto md:w-3/5 lg:w-1/2 flex justify-center">
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-40 h-40 md:w-96 md:h-96 relative overflow-hidden md:-mt-32 lg:-mt-48">
+              {/* Display an image as the background of the div, filling the entire area while maintaining its aspect ratio */}
               <Image src={imageSrc} layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
+        {/* Create a section element with padding-left and padding-right of 1rem, md:px-10 class to apply padding-left and padding-right of 2.5rem on medium and larger screens */}
+        {/* Create a div element with text centered */}
+        {/* Create a h3 element with text size of 3xl, padding on top and bottom to 2.5 rems, text colour light gray in dark mode */}
         <section className="px-4 md:px-10">
           <div className="text-center">
             <h3 className="text-3xl py-10 dark:text-gray-50">
               A bit about me.
             </h3>
           </div>
+          {/* Create a div element */}
+          {/* Set the display property of the element to flex, set direction of the flex container to be column-wise, row-wise on medium-sized screens and above */}
+          {/* Center the flex items horizontally on medium-sized screens and above */}
+          {/* Add a gap of 10px between flex items on large-sized screens and above */}
+
           <div className="flex flex-col md:flex-row md:justify-center lg:gap-10">
+            {/* Create inner div element */}
+            {/* Centers the text content of the element horizontally */}
+            {/* Add small pink shadow to the element */}
+            {/* Add padding of 6, 10 on medium and larger screens, round the corners by xl, add a margin of 10px on the top and bottom of the element */}
+            {/* Set background color to  light orange color, dark gray color in dark mode. */}
+            {/* Set the flex-grow, flex-shrink, and flex-basis properties of the element to 1, allowing the element to grow or shrink as necessary to fill the available space */}
+
             <div className="text-center shadow-sm shadow-pink-400 p-6 md:p-10 rounded-xl my-10 bg-orange-100 dark:bg-gray-800 flex-1">
+              {/* Create h3 element */}
+              {/* Set text to lg, dark gray, medium weight, padding top of 8, padding bottom of 2, light gray in dark mode */}
               <h3 className="text-lg text-gray-800 font-medium pt-8 pb-2 dark:text-gray-50">
                 Digital Designs
               </h3>
+              {/* Create p element, padding top and bottom set as 2, dark gray text, light gray in dark mode */}
               <p className="py-2 text-gray-800 dark:text-gray-50">
                 Creating contemporary designs suited for your needs following
                 core digital design theory.
               </p>
+              {/* Create h4 element, padding of 4px on the top and bottom, teal text */}
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
+              {/* Create p elements, dark gray text, padding of 1px on the top and bottom, light gray text in dark mode */}
               <p className="text-gray-800 py-1 dark:text-gray-50">Photoshop</p>
               <p className="text-gray-800 py-1 dark:text-gray-50">
                 Illustrator
@@ -189,29 +302,49 @@ function Home() {
               <p className="text-gray-800 py-1 dark:text-gray-50">Indesign</p>
               <p className="text-gray-800 py-1 dark:text-gray-50">Pixelmator</p>
             </div>
+            {/* Create div element */}
+            {/* Centers the text content of the element horizontally */}
+            {/* Add medium orange shadow to the element */}
+            {/* Add padding of 6, 10 on medium and larger screens, round the corners by xl, add a margin of 10px on the top and bottom of the element */}
+            {/* Set background color to  light orange color, dark gray color in dark mode. */}
+            {/* Set the flex-grow, flex-shrink, and flex-basis properties of the element to 1, allowing the element to grow or shrink as necessary to fill the available space */}
             <div className="text-center shadow-md shadow-orange-400 p-6 md:p-10 rounded-xl my-10 bg-orange-100 dark:bg-gray-800 flex-1">
+              {/* Set text to lg, dark gray, medium weight, padding top of 8, padding bottom of 2, light gray in dark mode */}
               <h3 className="text-lg text-gray-800 font-medium pt-8 pb-2 dark:text-gray-50">
                 Clean Code
               </h3>
+              {/* Create p element, padding top and bottom set as 2, dark gray text, light gray in dark mode */}
               <p className="py-2 text-gray-800 dark:text-gray-50">
                 Writing clear and maintainable code that solves problems and
                 delivers value.
               </p>
+              {/* Create h4 element, padding of 4px on the top and bottom, teal text */}
               <h4 className="py-4 text-teal-600">Technologies I Use</h4>
+              {/* Create p elements, dark gray text, padding of 1px on the top and bottom, light gray text in dark mode */}
               <p className="text-gray-800 py-1 dark:text-gray-50">JavaScript</p>
               <p className="text-gray-800 py-1 dark:text-gray-50">React</p>
               <p className="text-gray-800 py-1 dark:text-gray-50">Node.js</p>
               <p className="text-gray-800 py-1 dark:text-gray-50">Next.js</p>
             </div>
+            {/* Create div element */}
+            {/* Centers the text content of the element horizontally */}
+            {/* Add large orange shadow to the element */}
+            {/* Add padding of 6, 10 on medium and larger screens, round the corners by xl, add a margin of 10px on the top and bottom of the element */}
+            {/* Set background color to  light orange color, dark gray color in dark mode. */}
+            {/* Set the flex-grow, flex-shrink, and flex-basis properties of the element to 1, allowing the element to grow or shrink as necessary to fill the available space */}
             <div className="text-center shadow-2xl shadow-orange-500 p-6 md:p-10 rounded-xl my-10 bg-orange-100 dark:bg-gray-800 flex-1">
+              {/* Set text to lg, dark gray, medium weight, padding top of 8, padding bottom of 2, light gray in dark mode */}
               <h3 className="text-lg text-gray-800 font-medium pt-8 pb-2 dark:text-gray-50">
                 Content Creation
               </h3>
+              {/* Create p element, padding top and bottom set as 2, dark gray text, light gray in dark mode */}
               <p className="py-2 text-gray-800 dark:text-gray-50">
                 Experienced in creating engaging digital content, gaining skills
                 in digital marketing strategy.
               </p>
+              {/* Create h4 element, padding of 4px on the top and bottom, teal text */}
               <h4 className="py-4 text-teal-600">Projects I have worked</h4>
+              {/* Create p elements, dark gray text, padding of 1px on the top and bottom, light gray text in dark mode */}
               <p className="text-gray-800 py-1 dark:text-gray-50">
                 Website Design
               </p>
@@ -227,54 +360,100 @@ function Home() {
             </div>
           </div>
         </section>
+        {/* Define a section with a top and bottom padding of 10 */}
         <section className="py-10">
+          {/* Create a div with centered text and an inner h3 of text size 3xl with a top and bottom padding of 20 */}
           <div className="text-center">
             <h3 className="text-3xl py-20 dark:text-orange-100">
               Some projects to play with.
             </h3>
           </div>
+          {/* Create a div element */}
+          {/* Set the display property of the element to flex, set the flex items to wrap to the next line if there is no more space in the container. */}
+          {/* Set the gap between the flex items to 6, 10 when the screen size is lg */}
+          {/* Horizontally center the flex items within the container, set the horizontal justification of the flex items to between when the screen size is lg */}
+          {/* Vertically center the flex items, top and bottom padding of 10 */}
           <div className="flex flex-wrap gap-6 lg:gap-10 justify-center lg:justify-between items-center py-10">
+            {/* Create inner div element */}
+            {/* Set width of the element to 100%, to 1/2 when screen size is md, to 1/5 when the screen size is lg */}
+            {/* Set position of the element to relative  */}
             <div className="w-full md:w-1/2 lg:w-1/5 relative">
+              {/* Create an anchor element with a hyperlink to "/todopage" and a target attribute set to "_blank" */}
+              {/* Set the display property of the element to block */}
               <a
                 href="./To-do/todoPage"
                 target="_blank"
                 className="block relative"
               >
+                {/* Round the corners of the element, hide any content that overflows the element */}
+                {/* Vertically center the flex items, horizontally centers the flex items within the container */}
+                {/* Display a checkmark icon with a pink color and size of 9xl, or a blue color for dark mode */}
                 <div className="rounded-lg overflow-hidden flex items-center justify-center">
                   <AiOutlineCheck className="text-pink-400 text-9xl dark:text-blue-400" />
                 </div>
+                {/* Set the position of the element to absolute, top and left position of the element to 0 */}
+                {/* Sets the width  and height of the element to 100% */}
+                {/* Vertically center the flex items, horizontally centers the flex items within the container */}
                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center"></div>
               </a>
             </div>
+            {/* Set width of the element to 100%, to 1/2 when screen size is md, to 1/5 when the screen size is lg */}
+            {/* Set position of the element to relative  */}
             <div className="w-full md:w-1/2 lg:w-1/5 relative">
+              {/* Create an anchor element with a hyperlink to "/Keyboard" and a target attribute set to "_blank" */}
+              {/* Set the display property of the element to block */}
               <a href="/Keyboard" target="_blank" className="block relative">
+                {/* Round the corners of the element, hide any content that overflows the element */}
+                {/* Vertically center the flex items, horizontally centers the flex items within the container */}
+                {/* Display a music note icon with a pink color and size of 9xl, or a blue color for dark mode */}
                 <div className="rounded-lg overflow-hidden flex items-center justify-center">
                   <FaMusic className="text-pink-400 text-9xl dark:text-blue-400" />
                 </div>
+                {/* Set the position of the element to absolute, top and left position of the element to 0 */}
+                {/* Sets the width and height of the element to 100% */}
+                {/* Vertically center the flex items, horizontally centers the flex items within the container */}
                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center"></div>
               </a>
             </div>
+            {/* Set width of the element to 100%, to 1/2 when screen size is md, to 1/5 when the screen size is lg */}
+            {/* Set position of the element to relative  */}
             <div className="w-full md:w-1/2 lg:w-1/5 relative">
+              {/* Create an anchor element with a hyperlink to "/Quotes" and a target attribute set to "_blank" */}
+              {/* Set the display property of the element to block */}
               <a
                 href="./Inspiration/Quotes"
                 target="_blank"
                 className="block relative"
               >
+                {/* Round the corners of the element, hide any content that overflows the element */}
+                {/* Vertically center the flex items, horizontally centers the flex items within the container */}
+                {/* Display a heart icon with a pink color and size of 9xl, or a blue color for dark mode */}
                 <div className="rounded-lg overflow-hidden flex items-center justify-center">
                   <FaHeart className="text-pink-400 text-9xl dark:text-blue-400" />
                 </div>
+                {/* Set the position of the element to absolute, top and left position of the element to 0 */}
+                {/* Sets the width and height of the element to 100% */}
+                {/* Vertically center the flex items, horizontally centers the flex items within the container */}
                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center"></div>
               </a>
             </div>
+            {/* Set width of the element to 100%, to 1/2 when screen size is md, to 1/5 when the screen size is lg */}
+            {/* Set position of the element to relative  */}
             <div className="w-full md:w-1/2 lg:w-1/5 relative">
+              {/* Create an anchor element with a hyperlink to "/chatPage" and a target attribute set to "_blank" */}
+              {/* Set the display property of the element to block */}
               <a
                 href="./ChatApp/chatPage"
                 target="_blank"
                 className="block relative"
               >
+                {/* Round the corners of the element, hide any content that overflows the element */}
+                {/* Vertically center the flex items, horizontally centers the flex items within the container */}
+                {/* Display a message bubble icon with a pink color and size of 9xl, or a blue color for dark mode */}
                 <div className="rounded-lg overflow-hidden flex items-center justify-center">
                   <AiOutlineMessage className="text-pink-400 text-9xl dark:text-blue-400" />
                 </div>
+                {/* Vertically center the flex items, horizontally centers the flex items within the container */}
                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center"></div>
               </a>
             </div>
