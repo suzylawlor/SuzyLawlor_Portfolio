@@ -38,6 +38,7 @@ const QuoteGenerator = () => {
       {/* Render an empty div with the class name from styles.body */}
       <div className={styles.body}></div>
       <div className={styles.glowing}>
+        {/* Render span elements with an inline style defining CSS variable "--i" with a value of 1, 2 and 3 */}
         <span style={{ "--i": 1 }}></span>
         <span style={{ "--i": 2 }}></span>
         <span style={{ "--i": 3 }}></span>
@@ -55,7 +56,9 @@ const QuoteGenerator = () => {
       <div className={styles.wrapper}>
         <div className={styles.container}>
           <div className="quotes-container"></div>
+          {/* Render a conditional statement based on the "loaded" variable */}
           {loaded ? (
+            // If data has been loaded, display the quote and author
             <>
               <p id="quote" className={styles.quote}>
                 {quote}
@@ -65,12 +68,16 @@ const QuoteGenerator = () => {
               </h3>
             </>
           ) : (
+            // If data has not been loaded render a paragraph element with the class name from styles.p
+            // Render the appropriate text based on the "buttonClicked" variable */}
             <p className={styles.p}>
               {buttonClicked
-                ? "Fetching quote..."
-                : "Are you ready to be inspired?"}
+                ? "Fetching quote..." // Display "Fetching quote..." if the button has been clicked
+                : // Display "Are you ready to be inspired?" if the button has not been clicked
+                  "Are you ready to be inspired?"}
             </p>
           )}
+          {/* Render a button element with the id "btn", an onClick event handler assigned to "handleClick", and a class name from styles.button */}
           <button id="btn" onClick={handleClick} className={styles.button}>
             Get Quote
           </button>

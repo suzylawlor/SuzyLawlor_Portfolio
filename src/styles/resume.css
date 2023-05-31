@@ -1,5 +1,4 @@
-
- /* Remove outlines */
+/* Remove outlines */
 .resume-page * {
   outline: none;
 }
@@ -17,7 +16,6 @@ Light beige as background,
 display as blocks (so they take up the full width of their container), 
 add a smooth 0.3 second transition effect to any CSS properties that change on hover or focus. */
 .resume-page a {
-  
   color: #fffcf2;
   display: block;
   transition-duration: 0.3s;
@@ -75,7 +73,6 @@ set background color to a dark blue color */
   width: 30%;
   padding: 30px 15px;
   background: #003d5b;
-  
 }
 /* Select elements with the class .profile that are descendants of elements with the class .base and .resume:
 sets background color to lighter blue color, 
@@ -83,11 +80,11 @@ add padding of 30 pixels on the top, 15 pixels on the left and right, and 40 pix
 set negative margins to adjust the position of the element
 set a higher z-index to layer it above other elements */
 .resume .base .profile {
-background: #33658a;
-padding: 30px 15px 40px 15px;
-margin: -30px -15px 45px -15px;
-position: relative;
-z-index: 2;
+  background: #33658a;
+  padding: 30px 15px 40px 15px;
+  margin: -30px -15px 45px -15px;
+  position: relative;
+  z-index: 2;
 }
 /* Select the pseudo-element ::after of elements with the class .profile that are descendants of elements with the classes .base and .resume. 
 set content of the ::after pseudo-element to an empty string so the pseudo-element can be generated and rendered, 
@@ -100,39 +97,36 @@ position left edge at the leftmost position ensuring the pseudo-element starts f
 apply skew transformation along the Y-axis by -5 degrees in a counter-clockwise direction, creating a slanted effect
 position behind other elements with a higher z-index value */
 .resume .base .profile::after {
-content: "";
-position: absolute;
-background:#184e77;
-width: 100%;
-height: 30px;
-bottom: -15px;
-left: 0;
-transform: skewY(-5deg);
-z-index: -1;
-
+  content: "";
+  position: absolute;
+  background: #184e77;
+  width: 100%;
+  height: 30px;
+  bottom: -15px;
+  left: 0;
+  transform: skewY(-5deg);
+  z-index: -1;
 }
 /* Select img element that is a descendant the class .photo, .profile, .base and .resume
 set width of img element to 80% of its containing element's width */
 .resume .base .profile .photo img {
-width: 80%;
-
+  width: 80%;
 }
 /* Select the .photo class that is a descendant of the class .profile, the class .base, and the class .resume
 display property of element to flex allowing element to become a flex container, enabling flexbox layout for its child elements
 justify-content property of the flex container to center to horizontally align flex items (child elements) within the flex container along the main axis
 align-items property of the flex container to center to vertically align the flex items (child elements) within the flex container along the cross axis */
 .resume .base .profile .photo {
-display: flex;
-justify-content: center;
-align-items: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Select the class .info that is a descendant of the class .profile, .base, .resume
 text-align property of the selected element to center
 text color to light beige */
 .resume .base .profile .info {
-text-align: center;
-color: #fffcf2;
+  text-align: center;
+  color: #fffcf2;
 }
 /* Select the class .name that is a descendant of the class .info, .profile, .base, .resume
 add top margin of 10 pixels
@@ -141,11 +135,11 @@ set font size to 1.75 times the default size
 convert text to lowercase using the text-transform property
 text color to light tan */
 .resume .base .profile .info .name {
-margin-top: 10px;
-margin-bottom: 0;
-font-size: 1.75em;
-text-transform: lowercase;
-color: #fbd1a2;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 1.75em;
+  text-transform: lowercase;
+  color: #fbd1a2;
 }
 /* Select the class .job that is a descendant of the class .info, .profile, .base, .resume
 add top margin of 10 pixels
@@ -154,22 +148,22 @@ set font size to 1.5 times the default size
 convert text to lowercase using the text-transform property
 text color to light blue */
 .resume .base .profile .info .job {
-margin-top: 10px;
-margin-bottom: 0;
-font-size: 1.5em;
-text-transform: lowercase;
-color: #30638e;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 1.5em;
+  text-transform: lowercase;
+  color: #30638e;
 }
 /* Select div elements that are within the class .contact, .base, .resume
 each line of text within the div elements will have a height of 28 pixels */
 .resume .base .contact div {
-line-height: 28px;
+  line-height: 28px;
 }
 /* Select a elements that are descendants of the div elements within the class .contact, .base, .resume
 selects element when it is being hovered over
 change text color to light orange color when hovered over */
 .resume .base .contact div a:hover {
-color: #ffb563;
+  color: #ffb563;
 }
 /* Select i elements that are descendants of the div elements within the class .contact, .base, .resume
 text color to light orange color 
@@ -180,30 +174,30 @@ text-align property of the selected element to center
 add right margin size of 15 pixels
 add 0.3 second transition effect to any CSS properties that change on hover or focus */
 .resume .base .contact div i {
-color: #ffb563;
-width: 20px;
-height: 20px;
-font-size: 20px;
-text-align: center;
-margin-right: 15px;
-transition-duration: 0.3s;
+  color: #ffb563;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 15px;
+  transition-duration: 0.3s;
 }
 /* Select span elements that are descendants of the div elements within the class .contact, .base, .resume
 set position of span elements relative to their normal position in the document flow */
 .resume .base .contact div span {
-position: relative;
+  position: relative;
 }
 
 /* Select div elements that are within the class .follow, .base, .resume
-each line of text within the div elements will have a height of 28 pixels */ 
+each line of text within the div elements will have a height of 28 pixels */
 .resume .base .follow div {
-line-height: 28px;
+  line-height: 28px;
 }
 /* Select a elements that are descendants of the div elements within the class .contact, .base, .resume
 selects element when it is being hovered over
 change text color to light orange color when hovered over */
 .resume .base .follow div a:hover {
-color: #ffb563;
+  color: #ffb563;
 }
 /* Select i elements that are descendants of the div elements within the class .follow, .base, .resume
 text color to light orange color 
@@ -214,29 +208,29 @@ text-align property of the selected element to center
 add right margin size of 15 pixels
 add 0.3 second transition effect to any CSS properties that change on hover or focus */
 .resume .base .follow div i {
-color: #ffb563;
-width: 20px;
-height: 20px;
-font-size: 20px;
-text-align: center;
-margin-right: 15px;
-transition-duration: 0.3s;
+  color: #ffb563;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 15px;
+  transition-duration: 0.3s;
 }
 /* Select span elements that are descendants of the div elements within the class .follow, .base, .resume
 set position of span elements relative to their normal position in the document flow */
 .resume .base .follow div span {
-position: relative;
+  position: relative;
 }
 /* Select div elements that are within the class .interests, .base, .resume
-each line of text within the div elements will have a height of 28 pixels */ 
+each line of text within the div elements will have a height of 28 pixels */
 .resume .base .interests div {
-line-height: 28px;
+  line-height: 28px;
 }
 /* Select a elements that are descendants of the div elements within the class .interests, .base, .resume
 selects element when it is being hovered over
 change text color to light orange color when hovered over */
 .resume .base .interests div :hover {
-color: #ffb563;
+  color: #ffb563;
 }
 /* Select i elements that are descendants of the div elements within the class .interests, .base, .resume
 text color to light orange color 
@@ -247,29 +241,29 @@ text-align property of the selected element to center
 add right margin size of 15 pixels
 add 0.3 second transition effect to any CSS properties that change on hover or focus */
 .resume .base .interests div i {
-color: #ffb563;
-width: 20px;
-height: 20px;
-font-size: 20px;
-text-align: center;
-margin-right: 15px;
-transition-duration: 0.3s;
+  color: #ffb563;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 15px;
+  transition-duration: 0.3s;
 }
 /* Select span elements that are descendants of the div elements within the class .interests, .base, .resume
 set position of span elements relative to their normal position in the document flow */
 .resume .base .interests div span {
-position: relative;
+  position: relative;
 }
 /* Select elements with the class .contact that are descendants of elements with the class .base, .resume:
 set margin top to 60 pixels */
 .resume .base .contact {
-margin-top: 60px;
+  margin-top: 60px;
 }
 /* Select elements with either the class .contact or .follow that are with in the class .base, .resume:
 set margin bottom to 60 pixels */
 .resume .base .contact,
 .resume .base .follow {
-margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 /* Select elements with the class .func that are within the class .resume. 
 Set width to 100% of the parent element, 
@@ -324,11 +318,23 @@ float elements to the left */
 .resume .func .edu {
   float: left;
 }
+
+/* Select 'small' elements with either the class .work or .edu that are within the class .func, .resume:
+float elements to the left
+Display behavior of small elements to block-level, meaning they will take up the full width available and start on a new line
+Set opacity of small elements to 0.7 */
 .resume .func .work small,
 .resume .func .edu small {
   display: block;
   opacity: 0.7;
 }
+
+/* Select li elements descended from ul elements with either the class .work or .edu that are within the class .func, .resume:
+float elements to the left
+Positioned relative to normal position in the document flow
+Add a left margin of 15px to the li elements
+Add left padding of 25px to the li elements
+Add bottom padding of 15px to the li elements */
 .resume .func .work ul li,
 .resume .func .edu ul li {
   position: relative;
@@ -336,29 +342,32 @@ float elements to the left */
   padding-left: 25px;
   padding-bottom: 15px;
 }
+
+/* Select li elements descended from ul elements with either the class .work or .edu that are within the class .func, .resume:
+Circle animation activated when hovered over */
 .resume .func .work ul li:hover::before,
 .resume .func .edu ul li:hover::before {
   animation: circle 1.2s infinite;
 }
+
+/* Select span elements descended from li, ul elements with either the class .work or .edu that are within the class .func, .resume:
+Transform text to orange when hovered over */
 .resume .func .work ul li:hover span,
 .resume .func .edu ul li:hover span {
   color: #ffb563;
 }
 
-@keyframes circle {
-  from {
-    box-shadow: 0 0 0 0px yellow;
-  }
-  to {
-    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
-  }
-}
-
+/* Select the last li elements descended from ul elements with either the class .work or .edu that are within the class .func, .resume:
+Add bottom padding of 3px */
 .resume .func .work ul li:last-of-type,
 .resume .func .edu ul li:last-of-type {
   padding-bottom: 3px;
 }
 
+/* Select ::before and ::after pseudo-elements of li elements descended from ul elements with either the class .work or .edu that are within the class .func, .resume:
+Set content property to an empty string, meaning no additional content will be inserted before or after the list items
+Makes pseudo-elements behave as block-level elements, taking up their own line in the layout
+Position pseudo-elements absolutely within their nearest positioned ancestor */
 .resume .func .work ul li::before,
 .resume .func .work ul li::after,
 .resume .func .edu ul li::before,
@@ -368,6 +377,13 @@ float elements to the left */
   position: absolute;
 }
 
+/* Select ::before pseudo-element of li elements descended from ul elements with either the class .work or .edu that are within the class .func, .resume:
+Set width and height to 7 pixels
+Create a solid white border of 3 pixels
+Set background colour to orange
+Create circular shape by making the border radius equal to half of the width and height
+Positions pseudo-element 3px from left side of its containing block
+Set z-index to layer it above other elements */
 .resume .func .work ul li::before,
 .resume .func .edu ul li::before {
   width: 7px;
@@ -378,6 +394,14 @@ float elements to the left */
   left: 3px;
   z-index: 1;
 }
+
+/* Select ::after pseudo-element of li elements descended from ul elements with either the class .work or .edu that are within the class .func, .resume:
+Set width to 3 pixels
+Make pseudo-element occupy the full height of its containing block
+Set background colour to white
+Positions pseudo-element 5px from left side of its containing block
+Set z-index to layer it above other elements
+Position pseudo-element at the top of its containing block */
 .resume .func .work ul li::after,
 .resume .func .edu ul li::after {
   width: 3px;
@@ -387,6 +411,11 @@ float elements to the left */
   top: 0;
 }
 
+/* Select elements with the class .work that are descendants of elements with the class .func and .resume:
+Set width 48% of its containing block's width
+Set background color to lighter blue color, 
+Add padding of 15 pixels  
+Set margin values as 0 (top), 4% (right), 15px (bottom), and 0 (left) */
 .resume .func .work {
   width: 48%;
   background: #1a759f;
@@ -394,18 +423,32 @@ float elements to the left */
   margin: 0 4% 15px 0;
 }
 
+/* Select elements with the class .edu that are descendants of elements with the class .func and .resume:
+Set width 48% of its containing block's width
+Set background color to lighter blue color, 
+Add padding of 15 pixels */
 .resume .func .edu {
   width: 48%;
   background: #1a759f;
   padding: 15px;
 }
 
+/* Select elements with the class .skills-prog that are descendants of elements with the class .func and .resume:
+Ensure element does not float next to any floated elements that appear before it on both sides
+Set background color to lighter blue color, 
+Add padding of 15 pixels */
 .resume .func .skills-prog {
   clear: both;
   background: #1a759f;
   padding: 15px;
 }
 
+/* Select elements with the class .skills-soft that are descendants of elements with the class .func and .resume:
+Ensure element does not float next to any floated elements that appear before it on both sides
+Set background color to lighter blue color, 
+Add padding of 15 pixels
+Set margin values as 15px (top), 0 (right and left), and 0px (bottom)
+Span entire width of its containing block */
 .resume .func .skills-soft {
   clear: both;
   background: #1a759f;
@@ -413,13 +456,27 @@ float elements to the left */
   margin: 15px 0 0px;
   width: 100%;
 }
+
+/* Select ::after pseudo-element of elements with the class .skills-soft that are descendants of elements with the class .func and .resume:
+Set content property to an empty string
+Make pseudo-elements behave as block-level elements, taking up their own line in the layout
+Set height at 10 pixels
+Set background color to lighter blue color, 
+Set margin top as 15px */
 .resume .func .skills-soft::after {
   content: "";
   display: block;
-  height: 10px; 
+  height: 10px;
   background-color: #1a759f;
   margin-top: 15px;
 }
+
+/* Select ul elements with the class .skills-soft that are descendants of elements with the class .func and .resume:
+Enable flexbox layout for the list items within the <ul> element
+Create equal spacing between the list items
+Center content within each list item horizontally
+Width of <ul> element spans the entire width of its container 
+Eliminate the default margin and padding spacing */
 .resume .func .skills-soft ul {
   display: flex;
   justify-content: space-between;
@@ -429,35 +486,65 @@ float elements to the left */
   padding: 0;
 }
 
+/* Select li of ul elements with the class .skills-soft that are descendants of elements with the class .func and .resume:
+Set position of li elements relative to their normal position in the document flow
+Makes li elements behave as inline-level elements and still allow them to have a width and height, and to be positioned relative to each other
+Set wisth to 15% of its container, allowing the list items to be evenly distributed within their container
+Adds margin of 0.2% on the left and right sides of each list item, creating a small spacing between the list items. 
+Set font size of the content within each list item to be 80% of the default font size */
 .resume .func .skills-soft ul li {
   position: relative;
   display: inline-block;
   width: 15%;
   margin: 0 0.2%;
   font-size: 0.8em;
-  
 }
+
+/* Select .cbar elements that are descendants of svg, li hovered over of elements with the classes .skills-soft, .func and .resume:
+Change color of the stroke (outline) to a light green color
+Width of the stroke (outline) to be 4 pixels */
 .resume .func .skills-soft ul li:hover svg .cbar {
   stroke: #d9ed92;
   stroke-width: 4px;
 }
+
+/* Select span and small elements that are descendants of ul, li, hovered over of elements with the classes .skills-soft, .func and .resume:
+Increase size by a factor of 1.5 
+Change text color to dark blue
+Set font weight to appear bold */
 .resume .func .skills-soft ul li:hover span,
 .resume .func .skills-soft ul li:hover small {
   transform: scale(1.5);
   color: #003d5b;
   font-weight: 700;
 }
+
+/* Select svg elements that are descendants of ul, li, with classes .skills-soft, .func and .resume:
+Width of svg to fill container
+Interior of svg shapes to be transparent
+Rotate svg elements counterclockwise by 90 degrees */
 .resume .func .skills-soft ul li svg {
   width: 100%;
   fill: transparent;
   transform: rotate(-90deg);
-  
 }
+
+/* Select .cbar elements that are descendants of svg, li, ul with classes .skills-soft, .func and .resume:
+Change color of the stroke (outline) to orange
+Width of the stroke (outline) to be 3 pixels
+End of strokes to be rounded */
 .resume .func .skills-soft ul li svg .cbar {
   stroke-width: 3px;
   stroke: #ffa200;
   stroke-linecap: round;
 }
+
+/* Select span and small elements, descendants of li, ul elements with the class .skills-soft, .func, .resume:
+Set position to absolute to allow elements to be positioned independently of their surrounding elements
+Display as block-level elements to they take up the full width available and start on a new line
+Width spans the entire width of its container 
+Position vertically at 52% of containing element's height
+Add 0.3 second transition effect */
 .resume .func .skills-soft ul li span,
 .resume .func .skills-soft ul li small {
   position: absolute;
@@ -466,11 +553,10 @@ float elements to the left */
   top: 52%;
   transition-duration: 0.3s;
 }
+
+/* Select span elements, descendants of li, ul elements with the class .skills-soft, .func, .resume:
+Position vertically at 40% of containing element's height
+ */
 .resume .func .skills-soft ul li span {
   top: 40%;
 }
-
-
-
-
-

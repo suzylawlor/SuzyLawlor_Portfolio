@@ -1,172 +1,319 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 .keyboard-container {
+  /* Setting the margin to 0 */
   margin: 0;
+  /* Setting the padding to 0 */
   padding: 0;
+  /* Setting the box-sizing to border-box to include padding and border in the element's total width and height */
   box-sizing: border-box;
+  /* Setting the font family to "Poppins", sans-serif */
   font-family: "Poppins", sans-serif;
+  /* Setting the display to flex to create a flex container */
   display: flex;
+  /* Aligning the flex items vertically at the center */
   align-items: center;
+  /* Aligning the flex items horizontally at the center */
   justify-content: center;
+  /* Setting the minimum height of the container to 100 viewport height (100% of the viewport height) */
   min-height: 100vh;
+   /* Setting the padding to 0 horizontally and 10px vertically */
   padding: 0 10px;
+   /* Setting the background color to rgb(159, 202, 236) */
   background: rgb(159, 202, 236);
 }
 
 .wrapper {
+  /* Setting the border radius of the element to 20 pixels */
   border-radius: 20px;
+   /* Setting the padding to 25 pixels at the top and bottom, and 40 pixels at the left and right */
   padding: 25px 40px;
+   /* Setting the background color to black */
   background: #141414;
 }
 
 .wrapper header {
+  /* Setting the color of the text within the header to light gray */
   color: #b2b2b2;
+  /* Setting the display property to flex to create a flex container */
   display: flex;
+  /* Aligning the flex items vertically at the center */
   align-items: center;
+   /* Distributing the flex items evenly along the horizontal axis */
   justify-content: space-between;
 }
 
 .header {
+  /* Setting the font size to 1.5 rem */
   font-size: 1.5rem;
+   /* Setting the minimum height to 0 */
   min-height: 0;
 }
 
+/* CSS rule for the class "column" within the header element */
 header .column {
+  /* Setting the display property to flex to create a flex container */
   display: flex;
+  /* Aligning the flex items vertically at the center */
   align-items: center;
 }
 
+/* CSS rule for the span elements within the class "column" within the header element */
 header .column span {
+  /* Setting the font weight to 500 */
   font-weight: 500;
+   /* Setting the right margin to 15 pixels */
   margin-right: 15px;
+   /* Setting the font size to 1.19 rem */
   font-size: 1.19rem;
 }
 
+/* CSS rule for the input elements within the class "volume-slider" */
 .volume-slider input {
+  /* Removing the outline (focus ring) from the input element */
   outline: none;
+  /* Setting the interactive control color of the input element to white */
   accent-color: #fff;
 }
 
+/* CSS rule for the input elements within the class "keys-checkbox" */
 .keys-checkbox input {
+  /* Setting the width of the input element to 60 pixels */
   width: 60px;
+  /* Setting the height of the input element to 30 pixels */
   height: 30px;
+  /* Setting the cursor to pointer, indicating it can be interacted with */
   cursor: pointer;
+  /* Setting the position property to relative */
   position: relative;
+  /* Setting the appearance property to none to remove the default styling */
   appearance: none;
+  /* Setting the border radius of the input element to 30 pixels */
   border-radius: 30px;
+  /* Setting the background color to #4b4b4b */
   background: #4b4b4b;
 }
 
+
+/* CSS rule for the pseudo-element ::before of the input elements within the class "keys-checkbox" */
 .keys-checkbox input::before {
+  /* Adding content to the pseudo-element (in this case, empty content) */
   content: "";
+  /* Setting the height of the pseudo-element to 20 pixels */
   height: 20px;
+  /* Setting the width of the pseudo-element to 20 pixels */
   width: 20px;
+  /* Positioning the top edge of the pseudo-element at the vertical center of its containing element */
   top: 50%;
+  /* Positioning the left edge of the pseudo-element 5 pixels from the left edge of its containing element */
   left: 5px;
+  /* Setting the border radius of the pseudo-element to inherit from its containing element */
   border-radius: inherit;
+  /* Setting the position of the pseudo-element to absolute, positioning it relative to its containing element */
   position: absolute;
+  /* Setting the background color of the pseudo-element to #8c8c8c */
   background: #8c8c8c;
+  /* Translating the pseudo-element vertically upward by 50% of its own height */
   transform: translateY(-50%);
+  /* Adding a transition effect to all properties of the pseudo-element with a duration of 0.3 seconds and an easing function of ease */
   transition: all 0.3s ease;
 }
 
+
+/* CSS rule for the pseudo-element ::before of the checked input elements within the class "keys-checkbox" */
 .keys-checkbox input:checked::before {
+  /* Positioning the left edge of the pseudo-element 35 pixels from the left edge of its containing element */
   left: 35px;
+  /* Changing the background color of the pseudo-element to #fff (white) */
   background: #fff;
 }
 
+/* CSS rule for the class "piano-keys" */
 .piano-keys {
+  /* Setting the display property to flex to create a flex container */
   display: flex;
+  /* Setting the top margin of the flex container to 40 pixels */
   margin-top: 40px;
 }
 
+/* CSS rule for the elements with the class "key" within the "piano-keys" class */
 .piano-keys .key {
+  /* Setting the cursor to pointer, indicating it can be interacted with */
   cursor: pointer;
+  /* Preventing the text from being selectable by the user */
   user-select: none;
+  /* Removing the bullet point from the list item */
   list-style: none;
+  /* Setting the color of the text to #a2a2a2 */
   color: #a2a2a2;
+  /* Setting the position property to relative */
   position: relative;
+  /* Transforming the text to uppercase */
   text-transform: uppercase;
 }
 
+
+/* CSS rule for elements with class "black" within the "piano-keys" class */
 .piano-keys .black {
+  /* Setting the width of the element to 44 pixels */
   width: 44px;
+  /* Setting the height of the element to 140 pixels */
   height: 140px;
+  /* Setting the z-index property to 2 to control the stacking order of elements */
   z-index: 2;
+  /* Setting the margins of the element to create spacing around it */
   margin: 0 -22px 0 -22px;
+  /* Setting the border-radius property to create rounded corners */
   border-radius: 0 0 5px 5px;
+  /* Setting the background color using a linear gradient */
   background: linear-gradient(#333, #000);
 }
 
+/* CSS rule for elements with class "black" and class "active" within the "piano-keys" class */
 .piano-keys .black.active {
+  /* Adding a box shadow to create a shadow effect on the element */
   box-shadow: inset -5px 5px 20px rgba(255, 255, 255, 0.1);
+  /* Changing the background color using a linear gradient */
   background: linear-gradient(to bottom, rgb(246, 202, 24), #e75a13);
 }
 
+/* CSS rule for elements with class "white" within the "piano-keys" class */
 .piano-keys .white {
+  /* Setting the width of the element to 70 pixels */
   width: 70px;
+  /* Setting the height of the element to 230 pixels */
   height: 230px;
+  /* Setting the border-radius property to create rounded corners */
   border-radius: 8px;
+  /* Setting a border around the element */
   border: 1px solid #000;
+  /* Setting the background color using a linear gradient */
   background: linear-gradient(#fff 96%, #eee 4%);
 }
 
+
+/* CSS rule for elements with class "white" and class "active" within the "piano-keys" class */
 .piano-keys .white.active {
+  /* Adding a box shadow to create a shadow effect on the element */
   box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  /* Changing the background color using a linear gradient */
   background: linear-gradient(to bottom, #faa6ff 0%, #f20089 100%);
 }
 
+/* CSS rule for elements within the "piano-keys" class that are <span> elements */
 .piano-keys span {
+  /* Setting the position of the element to absolute */
   position: absolute;
+  /* Positioning the element 20 pixels from the bottom */
   bottom: 20px;
+  /* Setting the width of the element to 100% */
   width: 100%;
+  /* Setting the font size of the element to 1.13rem */
   font-size: 1.13rem;
+  /* Aligning the text within the element to the center */
   text-align: center;
 }
 
+/* CSS rule for elements with class "key" within the "piano-keys" class that also have the class "hide" */
 .piano-keys .key.hide span {
+  /* Setting the display property of the <span> elements within the matching elements to none */
   display: none;
 }
 
+
+/* CSS rule for elements with class "white" and class "active" within the "piano-keys" class */
+.piano-keys .white.active {
+  /* Adding a box shadow to create a shadow effect on the element */
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  /* Changing the background color using a linear gradient */
+  background: linear-gradient(to bottom, #faa6ff 0%, #f20089 100%);
+}
+
+/* CSS rule for elements within the "piano-keys" class that are <span> elements */
+.piano-keys span {
+  /* Setting the position of the element to absolute */
+  position: absolute;
+  /* Positioning the element 20 pixels from the bottom */
+  bottom: 20px;
+  /* Setting the width of the element to 100% */
+  width: 100%;
+  /* Setting the font size of the element to 1.13rem */
+  font-size: 1.13rem;
+  /* Aligning the text within the element to the center */
+  text-align: center;
+}
+
+/* CSS rule for elements with class "key" within the "piano-keys" class that also have the class "hide" */
+.piano-keys .key.hide span {
+  /* Setting the display property of the <span> elements within the matching elements to none */
+  display: none;
+}
+
+/* Media query for screens with a maximum width of 815px */
 @media screen and (max-width: 815px) {
+  /* CSS rule for the elements with class "wrapper" within the media query */
   .wrapper {
+    /* Adjusting the padding of the elements to 25 pixels */
     padding: 25px;
   }
+  /* CSS rule for the elements with class "header" within the media query */
   .header {
+    /* Changing the flex direction of the elements to column */
     flex-direction: column;
   }
+  /* CSS rule for the elements with tag name "h2" and class "column" within the media query */
   header :where(h2, .column) {
+    /* Adjusting the margin bottom of the elements to 13 pixels */
     margin-bottom: 13px;
   }
+  /* CSS rule for the input elements within the "volume-slider" class within the media query */
   .volume-slider input {
+    /* Adjusting the maximum width of the input elements to 20 pixels */
     max-width: 20px;
   }
+  /* CSS rule for the elements with class "piano-keys" within the media query */
   .piano-keys {
+    /* Adjusting the top margin of the elements to 20 pixels */
     margin-top: 20px;
   }
+  /* CSS rule for specific child elements within the "piano-keys" class within the media query */
   .piano-keys .key:where(:nth-child(9), :nth-child(10)) {
+    /* Setting the display property of the matching elements to none */
     display: none;
   }
+  /* CSS rule for the elements with class "black" within the "piano-keys" class within the media query */
   .piano-keys .black {
+    /* Adjusting the height of the elements to 100 pixels */
     height: 100px;
+    /* Adjusting the width of the elements to 40 pixels */
     width: 40px;
+    /* Adjusting the margins of the elements to create spacing around them */
     margin: 0 -20px 0 -20px;
   }
+  
+  /* CSS rule for elements with class "white" within the "piano-keys" class */
   .piano-keys .white {
+    /* Adjusting the height of the elements to 180 pixels */
     height: 180px;
+     /* Adjusting the width of the elements to 60 pixels */
     width: 60px;
   }
 }
 
+/* Media query for screens with a maximum width of 615px */
 @media screen and (max-width: 615px) {
+  /* CSS rule for specific child elements within the "piano-keys" class within the media query */
   .piano-keys .key:nth-child(13),
   .piano-keys .key:nth-child(14),
   .piano-keys .key:nth-child(15),
   .piano-keys .key:nth-child(16),
   .piano-keys .key:nth-child(17) {
+    /* Setting the display property of the matching elements to none */
     display: none;
   }
+  /* CSS rule for the elements with class "white" within the "piano-keys" class within the media query */
   .piano-keys .white {
+    /* Adjusting the width of the elements to 50 pixels */
     width: 50px;
   }
 }
