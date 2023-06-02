@@ -191,7 +191,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>Node</span>
+                    <span>Typescript</span>
                     <small></small>
                   </li>
                   <li data-percent="65">
@@ -199,7 +199,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>AJAX</span>
+                    <span>C#</span>
                     <small></small>
                   </li>
                   <li data-percent="65">
@@ -217,7 +217,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>GIT</span>
+                    <span>Node.js</span>
                     <small></small>
                   </li>
                   <li data-percent="75">
@@ -225,7 +225,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>React</span>
+                    <span>WordPress</span>
                     <small></small>
                   </li>
                   <li data-percent="85">
@@ -233,7 +233,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>Redux</span>
+                    <span>jQuery</span>
                     <small></small>
                   </li>
                   <li data-percent="65">
@@ -241,7 +241,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>Express</span>
+                    <span>React</span>
                     <small></small>
                   </li>
                   <li data-percent="65">
@@ -249,7 +249,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>Next</span>
+                    <span>Next.js</span>
                     <small></small>
                   </li>
                   <li data-percent="65">
@@ -267,7 +267,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>APIs</span>
+                    <span>.NET</span>
                     <small></small>
                   </li>
                   <li data-percent="75">
@@ -275,7 +275,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>DOM</span>
+                    <span>GIT</span>
                     <small></small>
                   </li>
                   <li data-percent="85">

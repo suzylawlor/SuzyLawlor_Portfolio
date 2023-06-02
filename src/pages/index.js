@@ -321,10 +321,10 @@ function Home() {
               {/* Create h4 element, padding of 4px on the top and bottom, teal text */}
               <h4 className="py-4 text-teal-600">Technologies I Use</h4>
               {/* Create p elements, dark gray text, padding of 1px on the top and bottom, light gray text in dark mode */}
-              <p className="text-gray-800 py-1 dark:text-gray-50">JavaScript</p>
+              <p className="text-gray-800 py-1 dark:text-gray-50">HTML</p>
+              <p className="text-gray-800 py-1 dark:text-gray-50">CSS</p>
+              <p className="text-gray-800 py-1 dark:text-gray-50">Javascript</p>
               <p className="text-gray-800 py-1 dark:text-gray-50">React</p>
-              <p className="text-gray-800 py-1 dark:text-gray-50">Node.js</p>
-              <p className="text-gray-800 py-1 dark:text-gray-50">Next.js</p>
             </div>
             {/* Create div element */}
             {/* Centers the text content of the element horizontally */}
