@@ -42,8 +42,7 @@ const Form = ({ setInputText, todos, setTodos, inputText, setStatus }) => {
         onChange={inputTextHandler}
         // Set the type of the input element to "text"
         type="text"
-        // Assign the CSS class name "todo-input" to the input element
-        className="todo-input"
+        
       />
       {/* Render a button element */}
       <button
@@ -51,8 +50,7 @@ const Form = ({ setInputText, todos, setTodos, inputText, setStatus }) => {
         onClick={submitTodoHandler}
         // Set the background color of the button element to "white"
         style={{ backgroundColor: "white" }}
-        // Assign the CSS class name "todo-button" to the button element
-        className="todo-button"
+       
         // Set the type of the button element to "submit"
         type="submit"
       >
@@ -67,8 +65,7 @@ const Form = ({ setInputText, todos, setTodos, inputText, setStatus }) => {
           onChange={statusHandler}
           // Set the name attribute of the select element to "todos"
           name="todos"
-          // Assign the CSS class name "filter-todo" to the select element
-          className="filter-todo"
+          
         >
           {/* Render multiple option elements */}
           <option value="all">All</option>
