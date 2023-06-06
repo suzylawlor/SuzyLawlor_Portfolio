@@ -129,7 +129,7 @@ function Resume() {
                 <ul>
                   <li>
                     <span>Full Stack Web Development</span>
-                    <small>HyperionDev Bootcamp</small>
+                    <small>HyperionDev/ University of Edinburgh</small>
                     <small>2022 - 2023</small>
                   </li>
                   <li>
