@@ -1,3 +1,9 @@
+//The TodoPage component serves as the main entry point for the to-do list application. 
+//It initialises the state variables (inputText, todos, status, and filteredTodos) using the useState hook. 
+//It has functions for handling the input text, submitting new to-do items, changing the filter status, and saving/retrieving to-do list data from local storage using the useEffect hook.
+
+
+
 // import the necessary dependencies and components for the TodoApp component
 import React, { useState, useEffect } from "react";
 import Head from "next/head";

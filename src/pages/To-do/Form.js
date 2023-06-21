@@ -1,3 +1,10 @@
+//The Form component handles the input and submission of new to-do items. 
+//Renders an input field, a button, and a select element for filtering. 
+//The input field allows users to enter a new to-do item, and the button triggers the addition of the new item to the to-do list. 
+//The select element enables users to filter the displayed to-do items based on their completion status.
+
+
+
 import React from "react";
 
 // Define a functional component named "Form" that accepts props: setInputText, todos, setTodos, inputText, and setStatus

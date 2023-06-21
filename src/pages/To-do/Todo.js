@@ -1,3 +1,10 @@
+//The Todo component represents an individual to-do item in the list. 
+//It receives props text, todo, todos, and setTodos. 
+//It renders the text of the to-do item, along with buttons for marking the item as complete or deleting it. 
+//Clicking on the complete button toggles the completion status of the to-do item, while the delete button removes the item from the list.
+
+
+
 import React from "react";
 
 // Defining a functional component named Todo that receives props as an object

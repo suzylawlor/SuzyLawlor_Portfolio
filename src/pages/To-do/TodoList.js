@@ -1,3 +1,8 @@
+//The TodoList component is responsible for rendering the list of to-do items. 
+//It receives the filteredTodos, setTodos, and todos props. 
+//It maps over the filteredTodos array and renders the Todo component for each to-do item, passing the necessary props.
+
+
 import Todo from "../To-do/Todo";
 
 // Define a functional component named TodoList that takes in props: todos, setTodos, and filteredTodos

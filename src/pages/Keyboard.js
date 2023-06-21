@@ -1,3 +1,8 @@
+//Utilise React hooks useState and useEffect to manage state and perform side effects
+//Include state variables for volume, showKeys, and audio
+//Initialise the audio object with useEffect hook
+//Map an array of piano keys to generate JSX elements, handling key presses and clicks to play corresponding tunes
+
 // Importing necessary modules from React
 import { useState, useEffect } from "react";
 // Importing the Head component from Next.js
@@ -6,7 +11,7 @@ import Head from "next/head";
 // Creating a functional component called Piano
 const Piano = () => {
   // Using the useState hook to create and initialize state variables
-  const [allKeys, setAllKeys] = useState([]); // State variable for allKeys
+  
   const [volume, setVolume] = useState(0.5); // State variable for volume
   const [showKeys, setShowKeys] = useState(true); // State variable for showKeys
   const [audio, setAudio] = useState(null); // State variable for audio
@@ -69,12 +74,7 @@ const Piano = () => {
     setShowKeys((prevShowKeys) => !prevShowKeys);
   };
 
-  // Event handler for key press
-  const pressedKey = (e) => {
-    // Checking if the pressed key is included in the allKeys array
-    // Calling the playTune function with the pressed key
-    if (allKeys.includes(e.key)) playTune(e.key);
-  };
+ 
 
   // Generating the list of piano keys to be rendered
   const renderedKeys = pianoKeys.map((pianoKey) => (
