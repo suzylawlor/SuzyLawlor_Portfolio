@@ -1,8 +1,10 @@
 import Head from "next/head";
 
 function Resume() {
+
   return (
     <>
+  
       <Head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -19,9 +21,7 @@ function Resume() {
                 </div>
                 <div className="info">
                   <h1 className="name">Suzy Lawlor</h1>
-                  <h2 classNames="job">
-                    Administrator/<br></br>Data Entry Operator
-                  </h2>
+                  <h2 classNames="job">Web Developer</h2>
                 </div>
               </div>
               <div className="contact">
@@ -44,6 +44,16 @@ function Resume() {
                     <span>lawlor.suzy</span>
                   </a>
                 </div>
+                <div className="website">
+                  <a
+                    href="https://suzy-lawlor-portfolio-suzylawlor.vercel.app/"
+                    target="_blank"
+                  >
+                    {" "}
+                    <i className="fas fa-home"></i>
+                    <span>suzylawlor.com</span>
+                  </a>
+                </div>
               </div>
               <div className="follow">
                 <h3>Follow Me</h3>
@@ -56,7 +66,12 @@ function Resume() {
                     <span>linkedin</span>
                   </a>
                 </div>
-
+                <div className="github">
+                  <a href="https://github.com/suzylawlor" target="_blank">
+                    <i className="fab fa-github"></i>
+                    <span>GitHub</span>
+                  </a>
+                </div>
                 <div className="instagram">
                   <a
                     href="https://www.instagram.com/suzy_lawlor_art/"
@@ -78,7 +93,10 @@ function Resume() {
                     <i className="fas fa-book"></i>
                     <span>Graphic Novels</span>
                   </div>
-
+                  <div className="movies">
+                    <i className="fas fa-film"></i>
+                    <span>Horror Movies</span>
+                  </div>
                   <div className="games">
                     <i className="fas fa-gamepad"></i>
                     <span>Video Games</span>
@@ -93,7 +111,7 @@ function Resume() {
                 </h3>
                 <ul>
                   <li>
-                    <span>Administrator/Data Entry Operator</span>
+                    <span>Content Designer/Coordinator</span>
                     <small>AMP Capital</small>
                     <small>2018 - 2022</small>
                   </li>
@@ -115,9 +133,7 @@ function Resume() {
                     <small>2022 - 2023</small>
                   </li>
                   <li>
-                    <span>
-                      BA Honours Degree in <br></br>Fine Art
-                    </span>
+                    <span>BA Honours Degree in Fine Art</span>
                     <small>Central Saint Martins University</small>
                     <small>2012 - 2015</small>
                   </li>
@@ -127,22 +143,23 @@ function Resume() {
                 <h3>
                   <i className="fas fa-star"></i>About Me
                 </h3>
-                Multi-skilled Office Administrator and Data Entry Operator with 4
-                years of experience working in a fast-paced and dynamic office
-                environment within the finance industry. Proven track record of
-                efficient day-to-day operations, strong organisational and
-                communication skills. Expertise in office administration, data
-                analyse and input, project coordination, calendar management,
-                invoice processing, and client relationship management.
-                Proficient in MS Office Suite, project management software, web
-                development tools and Adobe Creative Cloud software. Friendly
-                and approachable demeanour, able to communicate effectively with
-                people at all levels of an organisation.
+                A recent full stack web development graduate with a degree in
+                Fine Art and a background in digital content creation and
+                marketing design, seeking a challenging position as a frontend
+                web developer. Possessing a strong foundation in HTML, CSS, and
+                JavaScript, as well as experience with web development
+                frameworks and libraries such as React, and Next.js. Experienced
+                in creating engaging digital content, including website design,
+                client communications and social media campaigns. Dedicated to
+                delivering clean, functional, and visually appealing web
+                solutions to clients. Seeking an opportunity to join a dynamic
+                team and grow as a developer while contributing to the success
+                of the organisation.
               </div>
               <div className="skills-soft">
                 <h3>
-                  <i className="fas fa-bezier-curve"></i>
-                  Software Skills and Training
+                  <i className="fas fa-bezier-curve"></i>Programming and
+                  Software Skills
                 </h3>
                 <ul>
                   <li data-percent="90">
@@ -150,7 +167,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>Excel</span>
+                    <span>HTML</span>
                     <small></small>
                   </li>
                   <li data-percent="75">
@@ -158,7 +175,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>Word</span>
+                    <span>CSS</span>
                     <small></small>
                   </li>
                   <li data-percent="85">
@@ -166,7 +183,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>PowerPoint</span>
+                    <span>JavaScript</span>
                     <small></small>
                   </li>
                   <li data-percent="65">
@@ -174,7 +191,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>Outlook</span>
+                    <span>Typescript</span>
                     <small></small>
                   </li>
                   <li data-percent="65">
@@ -182,7 +199,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>Sharepoint</span>
+                    <span>C#</span>
                     <small></small>
                   </li>
                   <li data-percent="65">
@@ -190,7 +207,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>Teams</span>
+                    <span>JSON</span>
                     <small></small>
                   </li>
                 </ul>
@@ -200,7 +217,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>ICMS</span>
+                    <span>Node.js</span>
                     <small></small>
                   </li>
                   <li data-percent="75">
@@ -208,7 +225,57 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>Illustrator</span>
+                    <span>WordPress</span>
+                    <small></small>
+                  </li>
+                  <li data-percent="85">
+                    <svg viewbox="0 0 100 100">
+                      <circle cx="50" cy="50" r="40"></circle>
+                      <circle className="cbar" cx="50" cy="50" r="40"></circle>
+                    </svg>
+                    <span>jQuery</span>
+                    <small></small>
+                  </li>
+                  <li data-percent="65">
+                    <svg viewbox="0 0 100 100">
+                      <circle cx="50" cy="50" r="40"></circle>
+                      <circle className="cbar" cx="50" cy="50" r="40"></circle>
+                    </svg>
+                    <span>React</span>
+                    <small></small>
+                  </li>
+                  <li data-percent="65">
+                    <svg viewbox="0 0 100 100">
+                      <circle cx="50" cy="50" r="40"></circle>
+                      <circle className="cbar" cx="50" cy="50" r="40"></circle>
+                    </svg>
+                    <span>Next.js</span>
+                    <small></small>
+                  </li>
+                  <li data-percent="65">
+                    <svg viewbox="0 0 100 100">
+                      <circle cx="50" cy="50" r="40"></circle>
+                      <circle className="cbar" cx="50" cy="50" r="40"></circle>
+                    </svg>
+                    <span>Tailwind</span>
+                    <small></small>
+                  </li>
+                </ul>
+                <ul>
+                  <li data-percent="90">
+                    <svg viewbox="0 0 100 100">
+                      <circle cx="50" cy="50" r="40"></circle>
+                      <circle className="cbar" cx="50" cy="50" r="40"></circle>
+                    </svg>
+                    <span>.NET</span>
+                    <small></small>
+                  </li>
+                  <li data-percent="75">
+                    <svg viewbox="0 0 100 100">
+                      <circle cx="50" cy="50" r="40"></circle>
+                      <circle className="cbar" cx="50" cy="50" r="40"></circle>
+                    </svg>
+                    <span>GIT</span>
                     <small></small>
                   </li>
                   <li data-percent="85">
@@ -232,7 +299,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>HTML</span>
+                    <span>Illustrator</span>
                     <small></small>
                   </li>
                   <li data-percent="65">
@@ -240,57 +307,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>CSS</span>
-                    <small></small>
-                  </li>
-                </ul>
-                <ul>
-                  <li data-percent="90">
-                    <svg viewbox="0 0 100 100">
-                      <circle cx="50" cy="50" r="40"></circle>
-                      <circle className="cbar" cx="50" cy="50" r="40"></circle>
-                    </svg>
-                    <span>React</span>
-                    <small></small>
-                  </li>
-                  <li data-percent="75">
-                    <svg viewbox="0 0 100 100">
-                      <circle cx="50" cy="50" r="40"></circle>
-                      <circle className="cbar" cx="50" cy="50" r="40"></circle>
-                    </svg>
-                    <span>Next</span>
-                    <small></small>
-                  </li>
-                  <li data-percent="85">
-                    <svg viewbox="0 0 100 100">
-                      <circle cx="50" cy="50" r="40"></circle>
-                      <circle className="cbar" cx="50" cy="50" r="40"></circle>
-                    </svg>
-                    <span>Tailwind</span>
-                    <small></small>
-                  </li>
-                  <li data-percent="65">
-                    <svg viewbox="0 0 100 100">
-                      <circle cx="50" cy="50" r="40"></circle>
-                      <circle className="cbar" cx="50" cy="50" r="40"></circle>
-                    </svg>
-                    <span>Bootstrap</span>
-                    <small></small>
-                  </li>
-                  <li data-percent="65">
-                    <svg viewbox="0 0 100 100">
-                      <circle cx="50" cy="50" r="40"></circle>
-                      <circle className="cbar" cx="50" cy="50" r="40"></circle>
-                    </svg>
-                    <span>Fire Warden</span>
-                    <small></small>
-                  </li>
-                  <li data-percent="65">
-                    <svg viewbox="0 0 100 100">
-                      <circle cx="50" cy="50" r="40"></circle>
-                      <circle className="cbar" cx="50" cy="50" r="40"></circle>
-                    </svg>
-                    <span>First Aid</span>
+                    <span>Pixelmator</span>
                     <small></small>
                   </li>
                 </ul>
