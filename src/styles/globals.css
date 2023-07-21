@@ -13,10 +13,6 @@ a {
   text-decoration: none;
 }
 
-.h-screen {
-  height:65vh;
-}
-
 @layer utilities {
   .animation-delay-2000 {
     animation-delay: 2s;
@@ -30,31 +26,6 @@ a {
 @font-face {
   font-family: "burtons";
   src: url("/Burtons.otf");
-}
-
-/* Media queries for different screen sizes */
-@media (max-width: 768px) {
-  .h-screen {
-    height: 90vh;
-  }
-}
-
-/* Add more media queries as needed for other screen sizes */
-/* Example for tablets */
-@media (min-width: 820px) and (max-width: 1024px) {
-  .h-screen {
-    height: 40vh;
-    
-    
-  }
-
-}
-
-/* Adjust for smaller screens such as mobile phones */
-@media (max-width: 480px) {
-   .h-screen {
-    height: 70vh;
-  }
 }
 
 
