@@ -154,9 +154,15 @@ text color to light blue */
   text-transform: lowercase;
   color: #30638e;
 }
+.resume .base .contact {
+margin-top: 100px !important;
+}
+
+
 /* Select div elements that are within the class .contact, .base, .resume
 each line of text within the div elements will have a height of 28 pixels */
 .resume .base .contact div {
+ 
   line-height: 28px;
 }
 /* Select a elements that are descendants of the div elements within the class .contact, .base, .resume
@@ -191,6 +197,7 @@ set position of span elements relative to their normal position in the document 
 /* Select div elements that are within the class .follow, .base, .resume
 each line of text within the div elements will have a height of 28 pixels */
 .resume .base .follow div {
+ 
   line-height: 28px;
 }
 /* Select a elements that are descendants of the div elements within the class .contact, .base, .resume
@@ -224,6 +231,7 @@ set position of span elements relative to their normal position in the document 
 /* Select div elements that are within the class .interests, .base, .resume
 each line of text within the div elements will have a height of 28 pixels */
 .resume .base .interests div {
+ 
   line-height: 28px;
 }
 /* Select a elements that are descendants of the div elements within the class .interests, .base, .resume
@@ -504,7 +512,7 @@ Set font size of the content within each list item to be 80% of the default font
 Change color of the stroke (outline) to a light green color
 Width of the stroke (outline) to be 4 pixels */
 .resume .func .skills-soft ul li:hover svg .cbar {
-  stroke: #d9ed92;
+  stroke: #e6bd36;
   stroke-width: 4px;
 }
 
@@ -534,7 +542,7 @@ Change color of the stroke (outline) to orange
 Width of the stroke (outline) to be 3 pixels
 End of strokes to be rounded */
 .resume .func .skills-soft ul li svg .cbar {
-  stroke-width: 3px;
+  stroke-width: 2px;
   stroke: #ffa200;
   stroke-linecap: round;
 }

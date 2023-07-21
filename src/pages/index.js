@@ -2,10 +2,6 @@
 import Head from "next/head";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
-import { AiOutlineCheck } from "react-icons/ai";
-import { FaMusic } from "react-icons/fa";
-import { FaHeart } from "react-icons/fa";
-import { AiOutlineMessage } from "react-icons/ai";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
@@ -187,7 +183,7 @@ function Home() {
               style={{ position: "relative", zIndex: 1 }}
               className="text-xl md:text-4xl py-2 text-gray-900 dark:text-orange-100"
             >
-              Developer and designer.
+              Administrator/Data Entry Operator
             </h3>
 
             {/* Create a p element */}
@@ -201,9 +197,9 @@ function Home() {
               style={{ position: "relative", zIndex: 1 }}
               className="text-lg md:text-3xl py-5 leading-8 text-gray-950 dark:text-gray-200 max-w-xl mx-auto"
             >
-              Recent full stack web development graduate with a degree in Fine
-              Art and a background in digital content creation and marketing
-              design.
+              Experienced Office Administrator and Data Entry Operator with a
+              degree in Fine Art and a background in digital content creation
+              and marketing design.
             </p>
 
             {/* Create a div element */}
@@ -216,25 +212,7 @@ function Home() {
             <div
               style={{ position: "relative", zIndex: 1 }}
               className="text-3xl md:text-5xl flex justify-center gap-8 md:gap-16 py-3 text-gray-50 dark:text-gray-50 mb-4 md:mb-0"
-            >
-              {/* Set hyperlink to Linkedin and GitHub profile */}
-              {/* Open in new tab and add security attributes to prevent malicious links */}
-              {/* Render Linkedin and Github icons from the react-icons/bs library */}
-              <a
-                href="https://www.linkedin.com/in/suzy-lawlor"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillLinkedin />
-              </a>
-              <a
-                href="https://github.com/suzylawlor"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </div>
+            ></div>
           </div>
         </section>
         {/* Create a section element */}
@@ -264,9 +242,7 @@ function Home() {
         {/* Create a h3 element with text size of 3xl, padding on top and bottom to 2.5 rems, text colour light gray in dark mode */}
         <section className="px-4 md:px-10">
           <div className="text-center">
-            <h3 className="text-3xl py-10 dark:text-gray-50">
-              A bit about me.
-            </h3>
+            <h3 className="text-3xl py-10 dark:text-gray-50">A bit about me</h3>
           </div>
           {/* Create a div element */}
           {/* Set the display property of the element to flex, set direction of the flex container to be column-wise, row-wise on medium-sized screens and above */}
@@ -285,22 +261,23 @@ function Home() {
               {/* Create h3 element */}
               {/* Set text to lg, dark gray, medium weight, padding top of 8, padding bottom of 2, light gray in dark mode */}
               <h3 className="text-lg text-gray-800 font-medium pt-8 pb-2 dark:text-gray-50">
-                Digital Designs
+                Office Coordination
               </h3>
               {/* Create p element, padding top and bottom set as 2, dark gray text, light gray in dark mode */}
               <p className="py-2 text-gray-800 dark:text-gray-50">
-                Creating contemporary designs suited for your needs following
-                core digital design theory.
+                Multi-skilled Office Administrator with a can-do attitude and an attention to detail.
               </p>
               {/* Create h4 element, padding of 4px on the top and bottom, teal text */}
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
+              <h4 className="py-4 text-teal-600">Software I Use</h4>
               {/* Create p elements, dark gray text, padding of 1px on the top and bottom, light gray text in dark mode */}
-              <p className="text-gray-800 py-1 dark:text-gray-50">Photoshop</p>
+              <p className="text-gray-800 py-1 dark:text-gray-50">Outlook</p>
               <p className="text-gray-800 py-1 dark:text-gray-50">
-                Illustrator
+                Word
               </p>
-              <p className="text-gray-800 py-1 dark:text-gray-50">Indesign</p>
-              <p className="text-gray-800 py-1 dark:text-gray-50">Pixelmator</p>
+              <p className="text-gray-800 py-1 dark:text-gray-50">
+                Sharepoint
+              </p>
+              <p className="text-gray-800 py-1 dark:text-gray-50">EGEM</p>
             </div>
             {/* Create div element */}
             {/* Centers the text content of the element horizontally */}
@@ -311,20 +288,24 @@ function Home() {
             <div className="text-center shadow-md shadow-orange-400 p-6 md:p-10 rounded-xl my-10 bg-orange-100 dark:bg-gray-800 flex-1">
               {/* Set text to lg, dark gray, medium weight, padding top of 8, padding bottom of 2, light gray in dark mode */}
               <h3 className="text-lg text-gray-800 font-medium pt-8 pb-2 dark:text-gray-50">
-                Clean Code
+                Data Entry
               </h3>
               {/* Create p element, padding top and bottom set as 2, dark gray text, light gray in dark mode */}
               <p className="py-2 text-gray-800 dark:text-gray-50">
-                Writing clear and maintainable code that solves problems and
-                delivers value.
+                Proficient in data entry software and managing data with
+                accuracy and speed.
               </p>
               {/* Create h4 element, padding of 4px on the top and bottom, teal text */}
-              <h4 className="py-4 text-teal-600">Technologies I Use</h4>
+              <h4 className="py-4 text-teal-600">Tools I Use</h4>
               {/* Create p elements, dark gray text, padding of 1px on the top and bottom, light gray text in dark mode */}
-              <p className="text-gray-800 py-1 dark:text-gray-50">HTML</p>
-              <p className="text-gray-800 py-1 dark:text-gray-50">CSS</p>
-              <p className="text-gray-800 py-1 dark:text-gray-50">Javascript</p>
-              <p className="text-gray-800 py-1 dark:text-gray-50">React</p>
+              <p className="text-gray-800 py-1 dark:text-gray-50">Excel</p>
+              <p className="text-gray-800 py-1 dark:text-gray-50">
+                Google Sheets
+              </p>
+              <p className="text-gray-800 py-1 dark:text-gray-50">
+                Google Forms
+              </p>
+              <p className="text-gray-800 py-1 dark:text-gray-50">Docupilot</p>
             </div>
             {/* Create div element */}
             {/* Centers the text content of the element horizontally */}
@@ -335,130 +316,27 @@ function Home() {
             <div className="text-center shadow-2xl shadow-orange-500 p-6 md:p-10 rounded-xl my-10 bg-orange-100 dark:bg-gray-800 flex-1">
               {/* Set text to lg, dark gray, medium weight, padding top of 8, padding bottom of 2, light gray in dark mode */}
               <h3 className="text-lg text-gray-800 font-medium pt-8 pb-2 dark:text-gray-50">
-                Content Creation
+                Digital Designs
               </h3>
               {/* Create p element, padding top and bottom set as 2, dark gray text, light gray in dark mode */}
               <p className="py-2 text-gray-800 dark:text-gray-50">
-                Experienced in creating engaging digital content, gaining skills
-                in digital marketing strategy.
+                Designing marketing graphics and writing clear code following
+                digital design theory.
               </p>
               {/* Create h4 element, padding of 4px on the top and bottom, teal text */}
-              <h4 className="py-4 text-teal-600">Projects I have worked</h4>
+              <h4 className="py-4 text-teal-600">Technologies I use</h4>
               {/* Create p elements, dark gray text, padding of 1px on the top and bottom, light gray text in dark mode */}
+              <p className="text-gray-800 py-1 dark:text-gray-50">HTML</p>
+              <p className="text-gray-800 py-1 dark:text-gray-50">CSS</p>
+              <p className="text-gray-800 py-1 dark:text-gray-50">Javascript</p>
               <p className="text-gray-800 py-1 dark:text-gray-50">
-                Website Design
-              </p>
-              <p className="text-gray-800 py-1 dark:text-gray-50">
-                Client Communication
-              </p>
-              <p className="text-gray-800 py-1 dark:text-gray-50">
-                Social Media Campaigns
-              </p>
-              <p className="text-gray-800 py-1 dark:text-gray-50">
-                Online Invitations
+                Adobe Creative Cloud
               </p>
             </div>
           </div>
         </section>
         {/* Define a section with a top and bottom padding of 10 */}
-        <section className="py-10">
-          {/* Create a div with centered text and an inner h3 of text size 3xl with a top and bottom padding of 20 */}
-          <div className="text-center">
-            <h3 className="text-3xl py-20 dark:text-orange-100">
-              Some projects to play with.
-            </h3>
-          </div>
-          {/* Create a div element */}
-          {/* Set the display property of the element to flex, set the flex items to wrap to the next line if there is no more space in the container. */}
-          {/* Set the gap between the flex items to 6, 10 when the screen size is lg */}
-          {/* Horizontally center the flex items within the container, set the horizontal justification of the flex items to between when the screen size is lg */}
-          {/* Vertically center the flex items, top and bottom padding of 10 */}
-          <div className="flex flex-wrap gap-6 lg:gap-10 justify-center lg:justify-between items-center py-10">
-            {/* Create inner div element */}
-            {/* Set width of the element to 100%, to 1/2 when screen size is md, to 1/5 when the screen size is lg */}
-            {/* Set position of the element to relative  */}
-            <div className="w-full md:w-1/2 lg:w-1/5 relative">
-              {/* Create an anchor element with a hyperlink to "/todopage" and a target attribute set to "_blank" */}
-              {/* Set the display property of the element to block */}
-              <a
-                href="./To-do/todoPage"
-                target="_blank"
-                className="block relative"
-              >
-                {/* Round the corners of the element, hide any content that overflows the element */}
-                {/* Vertically center the flex items, horizontally centers the flex items within the container */}
-                {/* Display a checkmark icon with a pink color and size of 9xl, or a blue color for dark mode */}
-                <div className="rounded-lg overflow-hidden flex items-center justify-center">
-                  <AiOutlineCheck className="text-pink-400 text-9xl dark:text-blue-400" />
-                </div>
-                {/* Set the position of the element to absolute, top and left position of the element to 0 */}
-                {/* Sets the width  and height of the element to 100% */}
-                {/* Vertically center the flex items, horizontally centers the flex items within the container */}
-                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center"></div>
-              </a>
-            </div>
-            {/* Set width of the element to 100%, to 1/2 when screen size is md, to 1/5 when the screen size is lg */}
-            {/* Set position of the element to relative  */}
-            <div className="w-full md:w-1/2 lg:w-1/5 relative">
-              {/* Create an anchor element with a hyperlink to "/Keyboard" and a target attribute set to "_blank" */}
-              {/* Set the display property of the element to block */}
-              <a href="/Keyboard" target="_blank" className="block relative">
-                {/* Round the corners of the element, hide any content that overflows the element */}
-                {/* Vertically center the flex items, horizontally centers the flex items within the container */}
-                {/* Display a music note icon with a pink color and size of 9xl, or a blue color for dark mode */}
-                <div className="rounded-lg overflow-hidden flex items-center justify-center">
-                  <FaMusic className="text-pink-400 text-9xl dark:text-blue-400" />
-                </div>
-                {/* Set the position of the element to absolute, top and left position of the element to 0 */}
-                {/* Sets the width and height of the element to 100% */}
-                {/* Vertically center the flex items, horizontally centers the flex items within the container */}
-                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center"></div>
-              </a>
-            </div>
-            {/* Set width of the element to 100%, to 1/2 when screen size is md, to 1/5 when the screen size is lg */}
-            {/* Set position of the element to relative  */}
-            <div className="w-full md:w-1/2 lg:w-1/5 relative">
-              {/* Create an anchor element with a hyperlink to "/Quotes" and a target attribute set to "_blank" */}
-              {/* Set the display property of the element to block */}
-              <a
-                href="./Inspiration/Quotes"
-                target="_blank"
-                className="block relative"
-              >
-                {/* Round the corners of the element, hide any content that overflows the element */}
-                {/* Vertically center the flex items, horizontally centers the flex items within the container */}
-                {/* Display a heart icon with a pink color and size of 9xl, or a blue color for dark mode */}
-                <div className="rounded-lg overflow-hidden flex items-center justify-center">
-                  <FaHeart className="text-pink-400 text-9xl dark:text-blue-400" />
-                </div>
-                {/* Set the position of the element to absolute, top and left position of the element to 0 */}
-                {/* Sets the width and height of the element to 100% */}
-                {/* Vertically center the flex items, horizontally centers the flex items within the container */}
-                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center"></div>
-              </a>
-            </div>
-            {/* Set width of the element to 100%, to 1/2 when screen size is md, to 1/5 when the screen size is lg */}
-            {/* Set position of the element to relative  */}
-            <div className="w-full md:w-1/2 lg:w-1/5 relative">
-              {/* Create an anchor element with a hyperlink to "/chatPage" and a target attribute set to "_blank" */}
-              {/* Set the display property of the element to block */}
-              <a
-                href="./ChatApp/chatPage"
-                target="_blank"
-                className="block relative"
-              >
-                {/* Round the corners of the element, hide any content that overflows the element */}
-                {/* Vertically center the flex items, horizontally centers the flex items within the container */}
-                {/* Display a message bubble icon with a pink color and size of 9xl, or a blue color for dark mode */}
-                <div className="rounded-lg overflow-hidden flex items-center justify-center">
-                  <AiOutlineMessage className="text-pink-400 text-9xl dark:text-blue-400" />
-                </div>
-                {/* Vertically center the flex items, horizontally centers the flex items within the container */}
-                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center"></div>
-              </a>
-            </div>
-          </div>
-        </section>
+        <section className="py-10"></section>
       </main>
     </div>
   );
