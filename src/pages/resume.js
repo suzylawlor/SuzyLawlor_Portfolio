@@ -27,7 +27,7 @@ function Resume() {
                 <div className="call">
                   <a href="tel:00447917071290">
                     <i className="fas fa-phone"></i>
-                    <span>07917 071290</span>
+                    <span>+4479 17071290</span>
                   </a>
                 </div>
                 <div className="address">
