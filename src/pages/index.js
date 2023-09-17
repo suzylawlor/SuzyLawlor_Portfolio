@@ -50,9 +50,9 @@ function Home() {
       {/* add padding on the left and right sides of the container, with increasing values on larger screens */}
       {/* add padding to the top and bottom of the container, with increasing values on medium to large screens */}
       {/* set the background color to a dark gray shade in dark mode */}
-      <main className="bg-orange-100 px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-16 md:pb-24 dark:bg-gray-800">
+      <main className="md:bg-orange-100 px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-16 md:pb-24 dark:bg-gray-800">
         {/* Define a section element that takes up the full height of the screen on medium to large screens */}
-        <section className="relative h-screen md:min-h-screen">
+        <section className="relative ">
           {/* Define a div element that will be positioned absolutely in the middle of the screen */}
           {/* position div element 1/3 down and centered horizontally within the section element. */}
           {/* center the div element by translating it 50% left and 50% up. */}
@@ -174,7 +174,7 @@ function Home() {
           <div className="text-center p-6 md:p-10">
             <h2
               style={{ position: "relative", zIndex: 1 }}
-              className="text-4xl md:text-8xl py-2 text-orange-200 font-medium dark:text-blue-400"
+              className="text-4xl md:text-8xl py-2 text-blue-500 font-medium dark:text-blue-400"
             >
               Suzy Lawlor
             </h2>
@@ -199,7 +199,7 @@ function Home() {
 
             <p
               style={{ position: "relative", zIndex: 1 }}
-              className="text-lg md:text-3xl py-5 leading-8 text-gray-950 dark:text-gray-200 max-w-xl mx-auto"
+              className="text-lg md:text-3xl sm:text-2xl py-5 leading-8 text-gray-950 dark:text-gray-200 max-w-xl mx-auto"
             >
               Recent full stack web development graduate with a degree in Fine
               Art and a background in digital content creation and marketing
@@ -215,7 +215,7 @@ function Home() {
             {/* Set the text color to white */}
             <div
               style={{ position: "relative", zIndex: 1 }}
-              className="text-3xl md:text-5xl flex justify-center gap-8 md:gap-16 py-3 text-gray-50 dark:text-gray-50 mb-4 md:mb-0"
+              className="text-3xl md:text-5xl flex justify-center gap-8 md:gap-16 py-5 text-gray-50 dark:text-gray-50 mb-4 md:mb-0"
             >
               {/* Set hyperlink to Linkedin and GitHub profile */}
               {/* Open in new tab and add security attributes to prevent malicious links */}
@@ -251,20 +251,19 @@ function Home() {
         {/* Hide any content that overflows the div */}
         {/* Apply negative margin-top to the div at medium and large screen sizes, moving it upwards to overlap the content above it */}
 
-        <section>
-          <div className="mx-auto md:w-3/5 lg:w-1/2 flex justify-center">
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-40 h-40 md:w-96 md:h-96 relative overflow-hidden md:-mt-32 lg:-mt-48">
-              {/* Display an image as the background of the div, filling the entire area while maintaining its aspect ratio */}
-              <Image src={imageSrc} layout="fill" objectFit="cover" />
-            </div>
+        <div className="mx-auto sm:w-3/5 md:w-3/5 lg:w-1/2 flex justify-center">
+          <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-20 h-20 md:w-96 md:h-96 relative overflow-hidden sm:-mt-18 ">
+            {/* Display an image as the background of the div, filling the entire area while maintaining its aspect ratio */}
+            <Image src={imageSrc} layout="fill" objectFit="cover" />
           </div>
-        </section>
+        </div>
+
         {/* Create a section element with padding-left and padding-right of 1rem, md:px-10 class to apply padding-left and padding-right of 2.5rem on medium and larger screens */}
         {/* Create a div element with text centered */}
         {/* Create a h3 element with text size of 3xl, padding on top and bottom to 2.5 rems, text colour light gray in dark mode */}
         <section className="px-4 md:px-10">
           <div className="text-center">
-            <h3 className="text-3xl py-10 dark:text-gray-50">
+            <h3 className="text-2xl py-10 dark:text-gray-50">
               A bit about me.
             </h3>
           </div>
@@ -389,7 +388,7 @@ function Home() {
                 {/* Vertically center the flex items, horizontally centers the flex items within the container */}
                 {/* Display a checkmark icon with a pink color and size of 9xl, or a blue color for dark mode */}
                 <div className="rounded-lg overflow-hidden flex items-center justify-center">
-                  <AiOutlineCheck className="text-pink-400 text-9xl dark:text-blue-400" />
+                  <AiOutlineCheck className="text-blue-500 text-9xl dark:text-blue-400" />
                 </div>
                 {/* Set the position of the element to absolute, top and left position of the element to 0 */}
                 {/* Sets the width  and height of the element to 100% */}
@@ -407,7 +406,7 @@ function Home() {
                 {/* Vertically center the flex items, horizontally centers the flex items within the container */}
                 {/* Display a music note icon with a pink color and size of 9xl, or a blue color for dark mode */}
                 <div className="rounded-lg overflow-hidden flex items-center justify-center">
-                  <FaMusic className="text-pink-400 text-9xl dark:text-blue-400" />
+                  <FaMusic className="text-blue-500 text-9xl dark:text-blue-400" />
                 </div>
                 {/* Set the position of the element to absolute, top and left position of the element to 0 */}
                 {/* Sets the width and height of the element to 100% */}
@@ -429,7 +428,7 @@ function Home() {
                 {/* Vertically center the flex items, horizontally centers the flex items within the container */}
                 {/* Display a heart icon with a pink color and size of 9xl, or a blue color for dark mode */}
                 <div className="rounded-lg overflow-hidden flex items-center justify-center">
-                  <FaHeart className="text-pink-400 text-9xl dark:text-blue-400" />
+                  <FaHeart className="text-blue-500 text-9xl dark:text-blue-400" />
                 </div>
                 {/* Set the position of the element to absolute, top and left position of the element to 0 */}
                 {/* Sets the width and height of the element to 100% */}
@@ -451,7 +450,7 @@ function Home() {
                 {/* Vertically center the flex items, horizontally centers the flex items within the container */}
                 {/* Display a message bubble icon with a pink color and size of 9xl, or a blue color for dark mode */}
                 <div className="rounded-lg overflow-hidden flex items-center justify-center">
-                  <AiOutlineMessage className="text-pink-400 text-9xl dark:text-blue-400" />
+                  <AiOutlineMessage className="text-blue-500 text-9xl dark:text-blue-400" />
                 </div>
                 {/* Vertically center the flex items, horizontally centers the flex items within the container */}
                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center"></div>
