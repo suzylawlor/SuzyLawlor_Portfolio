@@ -109,12 +109,12 @@ function Resume() {
                 </h3>
                 <ul>
                   <li>
-                    <span>Wordpress Developer</span>
+                    <span>Wordpress Developer/Administrator</span>
                     <small>Bright Heart Education</small>
                     <small>2023 - present</small>
                   </li>
                   <li>
-                    <span>Graphic Design Coordinator</span>
+                    <span>Graphic Designer/Administrator</span>
                     <small>AMP Capital</small>
                     <small>2018 - 2022</small>
                   </li>
@@ -142,8 +142,8 @@ function Resume() {
                   <i className="fas fa-star"></i>About Me
                 </h3>
                 A recent full stack web development graduate with a degree in
-                Fine Art and a background in digital content creation and
-                marketing design, seeking a challenging position as a frontend
+                Fine Art and a background in administration, digital content creation and
+                marketing design, seeking a challenging position as a
                 web developer. Possessing a strong foundation in HTML, CSS, and
                 JavaScript, as well as experience with web development
                 frameworks and libraries such as React, and Next.js. Experienced
