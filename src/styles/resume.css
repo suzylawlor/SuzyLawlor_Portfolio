@@ -431,6 +431,7 @@ Add padding of 15 pixels */
   width: 48%;
   background: #1a759f;
   padding: 15px;
+  padding-bottom: 45px;
 }
 
 /* Select elements with the class .skills-prog that are descendants of elements with the class .func and .resume:
