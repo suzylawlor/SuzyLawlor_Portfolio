@@ -141,10 +141,10 @@ function Resume() {
                 <h3>
                   <i className="fas fa-star"></i>About Me
                 </h3>
-                A recent full stack web development graduate with a degree in
-                Fine Art and a background in administration, digital content creation and
-                marketing design, seeking a challenging position as a
-                web developer. Possessing a strong foundation in HTML, CSS, and
+                A Frontend Web Developer with a degree in Fine Art and a
+                background in administration, digital content creation and
+                marketing design, seeking a challenging position as a web
+                developer. Possessing a strong foundation in HTML, CSS, and
                 JavaScript, as well as experience with web development
                 frameworks and libraries such as React, and Next.js. Experienced
                 in creating engaging digital content, including website design,
