@@ -201,9 +201,8 @@ function Home() {
               style={{ position: "relative", zIndex: 1 }}
               className="text-lg md:text-3xl sm:text-2xl py-5 leading-8 text-gray-950 dark:text-gray-200 max-w-xl mx-auto"
             >
-              Recent full stack web development graduate with a degree in Fine
-              Art and a background in digital content creation and marketing
-              design.
+              Frontend web developmer with a degree in Fine Art and a background
+              in digital content creation and marketing design.
             </p>
 
             {/* Create a div element */}
