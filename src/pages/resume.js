@@ -132,7 +132,7 @@ function Resume() {
                   </li>
                   <li>
                     <span>BA Honours Degree in Fine Art</span>
-                    <small>Central Saint Martins University</small>
+                    <small>Central Saint Martins University of the Arts</small>
                     <small>2012 - 2015</small>
                   </li>
                 </ul>
@@ -141,7 +141,7 @@ function Resume() {
                 <h3>
                   <i className="fas fa-star"></i>About Me
                 </h3>
-                A Frontend Web Developer with a degree in Fine Art and a
+                Frontend Web Developer with a degree in Fine Art and a
                 background in administration, digital content creation and
                 marketing design, seeking a challenging position as a web
                 developer. Possessing a strong foundation in HTML, CSS, and
