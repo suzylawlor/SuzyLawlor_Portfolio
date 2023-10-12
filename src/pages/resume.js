@@ -127,12 +127,12 @@ function Resume() {
                 <ul>
                   <li>
                     <span>Full Stack Web Development</span>
-                    <small>HyperionDev/ University of Edinburgh</small>
-                    <small>2023</small>
+                    <small>HyperionDev / The University of Edinburgh</small>
+                    <small>2022-2023</small>
                   </li>
                   <li>
                     <span>BA Honours Degree in Fine Art</span>
-                    <small>Central Saint Martins University of the Arts</small>
+                    <small>Central Saint Martins University</small>
                     <small>2012 - 2015</small>
                   </li>
                 </ul>
