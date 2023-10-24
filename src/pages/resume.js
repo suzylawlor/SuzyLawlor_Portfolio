@@ -148,7 +148,7 @@ function Resume() {
                 JavaScript, as well as experience with web development
                 frameworks and libraries such as React, and Next.js. Experienced
                 in creating engaging digital content, including website design,
-                Email Development, client communications and social media
+                email development, client communications and social media
                 campaigns. Dedicated to delivering clean, functional, and
                 visually appealing web solutions to clients. Currently
                 developing and maintaining Wordpress websites for the private
