@@ -201,8 +201,8 @@ function Home() {
               style={{ position: "relative", zIndex: 1 }}
               className="text-lg md:text-3xl sm:text-2xl py-5 leading-8 text-gray-950 dark:text-gray-200 max-w-xl mx-auto"
             >
-              Frontend Web Developer with a degree in Fine Art and a background
-              in digital content creation and marketing design.
+              Web Developer with a degree in Fine Art and a background in
+              digital content creation and marketing design.
             </p>
 
             {/* Create a div element */}
