@@ -148,12 +148,12 @@ function Resume() {
                 JavaScript, as well as experience with web development
                 frameworks and libraries such as React, and Next.js. Experienced
                 in creating engaging digital content, including website design,
-                client communications and social media campaigns. Dedicated to
-                delivering clean, functional, and visually appealing web
-                solutions to clients. Currently developing and maintaining
-                Wordpress websites for the private education sector. Seeking an
-                opportunity to join a dynamic team and grow as a developer while
-                contributing to the success of the organisation.
+                Email Development, client communications and social media
+                campaigns. Dedicated to delivering clean, functional, and
+                visually appealing web solutions to clients. Currently
+                developing and maintaining Wordpress websites for the private
+                education sector. Seeking an opportunity to join a dynamic team
+                and contributing to the success of the organisation.
               </div>
               <div className="skills-soft">
                 <h3>
