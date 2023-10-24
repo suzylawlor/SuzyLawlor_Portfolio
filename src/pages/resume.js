@@ -141,19 +141,20 @@ function Resume() {
                 <h3>
                   <i className="fas fa-star"></i>About Me
                 </h3>
-                Frontend Web Developer with a degree in Fine Art and a
-                background in administration, digital content creation and
-                marketing design, seeking a challenging position as a web
-                developer. Possessing a strong foundation in HTML, CSS, and
-                JavaScript, as well as experience with web development
-                frameworks and libraries such as React, and Next.js. Experienced
-                in creating engaging digital content, including website design,
-                email development, client communications and social media
-                campaigns. Dedicated to delivering clean, functional, and
-                visually appealing web solutions to clients. Currently
-                developing and maintaining Wordpress websites for the private
-                education sector. Seeking an opportunity to join a dynamic team
-                and contributing to the success of the organisation.
+                Developer and designer with a degree in Fine Art and a
+                background in web development, digital content creation,
+                marketing design, and administration seeking a challenging
+                position as a Developer/Designer. Possessing a strong foundation
+                in HTML, CSS, and JavaScript, as well as experience with web
+                development frameworks and libraries such as React, and Next.js.
+                Experienced in creating engaging digital content, including
+                website design, email development, client communications and
+                social media campaigns. Dedicated to delivering clean,
+                functional, and visually appealing web solutions to clients.
+                Currently developing and maintaining Wordpress websites for the
+                private education sector. Seeking an opportunity to join a
+                dynamic team and contributing to the success of the
+                organisation.
               </div>
               <div className="skills-soft">
                 <h3>
