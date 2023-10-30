@@ -51,7 +51,7 @@ export default function Home() {
         <ChatEngine
           height="calc(100vh - 212px)"
           projectID="
-588208e7-f65f-4b8a-b71a-f1020a898a06"
+0d7eb1d5-6fde-4192-b8e7-651008124635"
           userName={username}
           userSecret={secret}
           renderNewMessageForm={() => <MessageFormSocial />}
