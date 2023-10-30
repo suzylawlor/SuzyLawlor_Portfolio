@@ -19,7 +19,7 @@ function Resume() {
                 </div>
                 <div className="info">
                   <h1 className="name">Suzy Lawlor</h1>
-                  <h2 classNames="job">Web Developer</h2>
+                  <h2 classNames="job">Developer/Designer</h2>
                 </div>
               </div>
               <div className="contact">
@@ -109,12 +109,12 @@ function Resume() {
                 </h3>
                 <ul>
                   <li>
-                    <span>Wordpress Developer/Administrator</span>
+                    <span>Wordpress Developer</span>
                     <small>Bright Heart Education</small>
-                    <small>2023 - present</small>
+                    <small>2023 (temporary contract)</small>
                   </li>
                   <li>
-                    <span>Graphic Designer/Administrator</span>
+                    <span>Graphic Designer/Content Writer</span>
                     <small>AMP Capital</small>
                     <small>2018 - 2022</small>
                   </li>
@@ -142,19 +142,19 @@ function Resume() {
                   <i className="fas fa-star"></i>About Me
                 </h3>
                 Developer and designer with a degree in Fine Art and a
-                background in web development, digital content creation,
-                marketing design, and administration seeking a challenging
-                position as a Developer/Designer. Possessing a strong foundation
-                in HTML, CSS, and JavaScript, as well as experience with web
-                development frameworks and libraries such as React, and Next.js.
-                Experienced in creating engaging digital content, including
-                website design, email development, client communications and
-                social media campaigns. Dedicated to delivering clean,
-                functional, and visually appealing web solutions to clients.
-                Currently developing and maintaining Wordpress websites for the
-                private education sector. Seeking an opportunity to join a
-                dynamic team and contributing to the success of the
-                organisation.
+                background in web development, digital content creation, content
+                writing, marketing design, and administration seeking a
+                challenging position as a Developer/Designer. Possessing a
+                strong foundation in HTML, CSS, and JavaScript, as well as
+                experience with web development frameworks and libraries such as
+                React, and Next.js. Experienced in creating engaging digital
+                content, including website design, email development, client
+                communications and social media campaigns. Dedicated to
+                delivering clean, functional, and visually appealing web
+                solutions to clients. Currently developing and maintaining
+                Wordpress websites for the private education sector. Seeking an
+                opportunity to join a dynamic team and contributing to the
+                success of the organisation.
               </div>
               <div className="skills-soft">
                 <h3>
@@ -291,7 +291,7 @@ function Resume() {
                       <circle cx="50" cy="50" r="40"></circle>
                       <circle className="cbar" cx="50" cy="50" r="40"></circle>
                     </svg>
-                    <span>Pixelmator</span>
+                    <span>Ae</span>
                     <small></small>
                   </li>
                   <li data-percent="65">
