@@ -34,9 +34,7 @@ const QuoteGenerator = () => {
 
   // Render the JSX elements
   return (
-    <>
-      {/* Render an empty div with the class name from styles.body */}
-      <div className={styles.body}></div>
+    <>  
       <div className={styles.glowing}>
         {/* Render span elements with an inline style defining CSS variable "--i" with a value of 1, 2 and 3 */}
         <span style={{ "--i": 1 }}></span>

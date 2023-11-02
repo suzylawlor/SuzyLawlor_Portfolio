@@ -1,22 +1,4 @@
-/* CSS rule for the body element */
-.body {
-  /* Removing any margin */
-  margin: 0;
-  /* Removing any padding */
-  padding: 0;
-  /* Creating a flex container */
-  display: flex;
-  /* Centering the content horizontally */
-  justify-content: center;
-  /* Centering the content vertically */
-  align-items: center;
-  /* Setting the width to 100% of the parent element */
-  width: 100%;
-  /* Setting the maximum height to 100% of the viewport height */
-  max-height: 100vh;
-  /* Preventing overflow content from being displayed */
-  overflow: hidden;
-}
+
 
 /* CSS rule for elements with the class "glowing" */
 .glowing {
