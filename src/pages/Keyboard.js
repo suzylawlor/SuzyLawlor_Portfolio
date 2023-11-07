@@ -3,20 +3,31 @@
 //Initialise the audio object with useEffect hook
 //Map an array of piano keys to generate JSX elements, handling key presses and clicks to play corresponding tunes
 
-// Importing necessary modules from React
 import { useState, useEffect } from "react";
-// Importing the Head component from Next.js
+
 import Head from "next/head";
 
-// Creating a functional component called Piano
+// Create a functional component and start building our Piano
 const Piano = () => {
-  // Using the useState hook to create and initialize state variables
-  
-  const [volume, setVolume] = useState(0.5); // State variable for volume
-  const [showKeys, setShowKeys] = useState(true); // State variable for showKeys
-  const [audio, setAudio] = useState(null); // State variable for audio
+  // useState hook to create and initialise the state variables:
 
-  // useEffect hook to run code after the component has mounted
+  // State variable for volume
+  //'volume' to store volume level. Initial volume set to 50%
+  //'setVolume', function to update 'volume'
+  const [volume, setVolume] = useState(0.5);
+
+  // State variable for showKeys
+  // 'showKeys' to determine whether keys are displayed or not. Initialised as true (keys showing)
+  //'setShowKeys' function to update if 'showKeys' is true or false
+  const [showKeys, setShowKeys] = useState(true);
+
+  // State variable for audio
+  // 'audio' will store the 'Audio' object
+  // audio initially set as 'null'.
+  // 'setAudio' used to update 'audio'. Function to put the Audio object into 'audio'
+  const [audio, setAudio] = useState(null);
+
+  // useEffect hook to run the setAudio function after the component has mounted
   useEffect(() => {
     // Creating a new Audio object and setting it to the audio state variable
     setAudio(new Audio("/music/a.wav"));
@@ -43,17 +54,19 @@ const Piano = () => {
     { key: ";", className: "key white" },
   ];
 
-  // Function to play a tune when a key is pressed or clicked
+  // Function to play the tune when a key is clicked/pressed
   const playTune = (key) => {
     // Setting the source of the audio element to the corresponding audio file
     audio.src = `/music/${key}.wav`;
-    // Setting the volume of the audio element
+    // Setting the volume of the audio element to the current 'volume' state
     audio.volume = volume;
     // Playing the audio
     audio.play();
 
-    // Finding the clicked key element and adding the "active" class
+    // Visually show the key has been pressed
+    // Variable to detect the clicked key through data-key value
     const clickedKey = document.querySelector(`[data-key="${key}"]`);
+    // Visually represents the key has been clicked by adding 'active' class
     clickedKey.classList.add("active");
 
     // Removing the "active" class after 150 milliseconds
@@ -63,31 +76,36 @@ const Piano = () => {
   };
 
   // Event handler for volume change
+  // When user adjusts volume slider
   const handleVolume = (e) => {
-    // Updating the volume state variable with the new value
+    // Updating the volume state variable with the new volume value
     setVolume(e.target.value);
   };
 
   // Event handler for showKeys checkbox
+  // When user selects On or Off (through toggle)
   const handleKeysCheckbox = () => {
     // Toggling the showKeys state variable
+    // Take the state that showKeys was before toggle and set to opposite state
     setShowKeys((prevShowKeys) => !prevShowKeys);
   };
 
- 
-
   // Generating the list of piano keys to be rendered
+  // Use map function to select and transform each element in pianoKeys array
+  // Create new rederedKeys array with pianoKey objects
   const renderedKeys = pianoKeys.map((pianoKey) => (
+    // Create our list of pianoKey attributes
     <li
-      // Setting the key attribute of the li element
+      // Apply the pianoKeys names to pianoKey objects
       key={pianoKey.key}
-      // Setting the className of the li element based on pianoKey's className and showKeys state
+      // If showKeys 'true', no class name adjustment
+      // If showKeys 'false', add class name "hide"
       className={`${pianoKey.className} ${showKeys ? "" : "hide"}`}
-      // Setting the data-key attribute of the li element
+      // Apply data-key values to pianoKey objects
       data-key={pianoKey.key}
-      // Adding an onClick event listener to the li element to play the tune when clicked
+      // onClick event listener to activate playTune function with applied pianoKey values
       onClick={() => playTune(pianoKey.key)}
-      // Displaying the piano key value inside the li element
+      // Rendering the piano key values inside the li element
     >
       <span>{pianoKey.key}</span>
     </li>
@@ -99,33 +117,36 @@ const Piano = () => {
         <Head>
           <title>Keyboard</title>
         </Head>
-        <header className="header">
+        <header className="piano-text">
           <h2>Playable Piano</h2>
-          <div className="column volume-slider">
+          <div className="panel volume-slider">
             <span>Volume</span>
-            {/* Input element of type range for the volume slider */}
+            {/* Input element for the volume slider */}
             <input
+              // type of input will be a slider measured from a 'range' of 0 - 1
               type="range"
-              // Setting the minimum value of the range slider to 0
               min="0"
-              // Setting the maximum value of the range slider to 1
               max="1"
-              // Setting the initial value of the range slider to the volume state variable
+              // Set the value of the range slider to the volume state (initially at 50%)
               value={volume}
-              // Setting the step size of the range slider to "any"
+              // Set the step size of the range slider to "any", no level increments
               step="any"
               // Adding an onChange event listener to the range slider to handle volume changes
+              // handleVolume => setVolume => volume
               onChange={handleVolume}
             />
           </div>
-          <div className="column keys-checkbox">
+          <div className="panel keys-checkbox">
+            {/* Add a space character between text and checkbox */}
             <span>Show Keys</span>{" "}
             {/* Input element of type checkbox for the keys checkbox */}
             <input
+              // input type to be 'checkbox'
               type="checkbox"
-              // Setting the checked state of the checkbox to the showKeys state variable
+              // Setting the checked state of the checkbox to the showKeys state variable (true/false)
               checked={showKeys}
               // Adding an onChange event listener to the checkbox to handle showKeys changes
+              // handleKeysCheckbox => setShowKeys => showKeys
               onChange={handleKeysCheckbox}
             />
           </div>
