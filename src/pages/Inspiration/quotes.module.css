@@ -1,293 +1,215 @@
-
-
-/* CSS rule for elements with the class "glowing" */
+/* Set container relative to document */
+/* Adjust width, height and margin to be centered horizontally */
+/* Transform to the right of element */
+/* Apply animantion */
 .glowing {
-  /* Setting the position of the element to relative */
   position: relative;
-  /* Setting the width to 30% of the parent element */
-  width: 30%;
-  /* Setting the height to 80% of the parent element */
-  height: 80%;
-  /* Adding a top and bottom margin of 100 pixels and auto left and right margins to center the element horizontally */
+  width: 50%;
+  height: 50%;
   margin: 100px auto;
-  /* Setting the transform origin point to the right side of the element */
   transform-origin: right;
-  /* Applying an animation called "colorChange" with a duration of 5 seconds, linear timing, and infinite repeat */
-  animation: colorChange 5s linear infinite;
+  animation: colorChangeRotate 5s linear infinite;
 }
 
-/* CSS rule for elements with the class "glowing" that are even-numbered children */
+/* Even number children: transform left side of the element */
 .glowing:nth-child(even) {
-  /* Setting the transform origin point to the left side of the element */
   transform-origin: left;
 }
 
-
-/* CSS rule for media query with a maximum width of 700 pixels */
-@media (max-width: 700px) {
-  /* CSS rule for elements with the class "glowing" within the media query */
-  .glowing {
-    /* Setting the minimum width of the element to 100% of the parent element */
-    min-width: 100%;
-  }
-}
-
-/* CSS rule for keyframes animation called "colorChange" */
-@keyframes colorChange {
-  /* CSS keyframe for the initial state (0%) of the animation */
-  0% {
-    /* Applying a filter to rotate the hue by 0 degrees */
-    filter: hue-rotate(0deg);
-    /* Applying a rotation transform of 0 degrees */
-    transform: rotate(0deg);
-  }
-  /* CSS keyframe for the final state (100%) of the animation */
-  100% {
-    /* Applying a filter to rotate the hue by 360 degrees */
-    filter: hue-rotate(360deg);
-    /* Applying a rotation transform of 360 degrees */
-    transform: rotate(360deg);
-  }
-}
-
-/* CSS rule for elements with the class "glowing" and a child element of "span" */
+/* Position the span elements */
+/* Positioned relative to .glowing */
+/* Place --i 50px from all edges of container*/
 .glowing span {
-  /* Setting the position of the element to absolute */
   position: absolute;
-  /* Setting the top position using a calculated value based on a CSS custom property "--i" and a fixed value of 80 pixels */
-  top: calc(80px * var(--i));
-  /* Setting the left position using a calculated value based on a CSS custom property "--i" and a fixed value of 80 pixels */
-  left: calc(80px * var(--i));
-  /* Setting the bottom position using a calculated value based on a CSS custom property "--i" and a fixed value of 80 pixels */
-  bottom: calc(80px * var(--i));
-  /* Setting the right position using a calculated value based on a CSS custom property "--i" and a fixed value of 80 pixels */
-  right: calc(80px * var(--i));
+  top: calc(50px * var(--i));
+  left: calc(50px * var(--i));
+  bottom: calc(50px * var(--i));
+  right: calc(50px * var(--i));
 }
 
-/* CSS rule for pseudo-element "::before" of elements with the class "glowing" and a child element of "span" */
+/* Decoration of span elements */
+/* Positioned relative to .glowing */
+/* Left set to negative value so pseudo-elements move outside container */
+/* Height, width and border radius set to create large circles*/
 .glowing span::before {
-  /* Adding content to the pseudo-element */
   content: "";
-  /* Setting the position of the pseudo-element to absolute */
   position: absolute;
-  /* Setting the top position to 50% of the parent element */
   top: 50%;
-  /* Setting the left position to a negative value to position the pseudo-element outside the parent element */
-  left: -8px;
-  /* Setting the width of the pseudo-element to 15 pixels */
-  width: 15px;
-  /* Setting the height of the pseudo-element to 15 pixels */
-  height: 15px;
-  /* Setting the background color of the pseudo-element to a specific RGB value */
-  background: rgb(54, 5, 230);
-  /* Adding a border-radius to create a circular shape for the pseudo-element */
+  left: -10px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
 }
 
-
-/* CSS rule for pseudo-element "::before" of elements with the class "glowing" and a child element of "span" at positions that satisfy the formula (3n + 1) */
+/* Select span elements multiple of 3 + 1 (1, 4, etc) */
+/* Add box shadow effect with shadow behind and multiple layers/intensities */
 .glowing span:nth-child(3n + 1)::before {
-  /* Setting the background color of the pseudo-element to a specific RGBA value */
   background: rgba(134, 255, 0, 1);
-  /* Adding a box shadow effect to the pseudo-element with multiple layers and varying intensities */
+
   box-shadow: 0 0 20px rgba(134, 255, 0, 1), 0 0 40px rgba(134, 255, 0, 1),
     0 0 60px rgba(134, 255, 0, 1), 0 0 80px rgba(134, 255, 0, 1),
     0 0 0 8px rgba(134, 255, 0, 0.1);
 }
 
-/* CSS rule for pseudo-element "::before" of elements with the class "glowing" and a child element of "span" at positions that satisfy the formula (3n + 2) */
+/* Select span elements multiple of 3 + 2 (2, 5, etc) */
+/* Add box shadow effect with shadow behind and multiple layers/intensities */
 .glowing span:nth-child(3n + 2)::before {
-  /* Setting the background color of the pseudo-element to a specific RGBA value */
   background: rgba(255, 214, 0, 1);
-  /* Adding a box shadow effect to the pseudo-element with multiple layers and varying intensities */
+
   box-shadow: 0 0 20px rgba(255, 214, 0, 1), 0 0 40px rgba(255, 214, 0, 1),
     0 0 60px rgba(255, 214, 0, 1), 0 0 80px rgba(255, 214, 0, 1),
     0 0 0 8px rgba(255, 214, 0, 0.1);
 }
 
-/* CSS rule for pseudo-element "::before" of elements with the class "glowing" and a child element of "span" at positions that satisfy the formula (3n + 3) */
+/* Select span elements multiple of 3 + 3 (3, 6, etc) */
+/* Add box shadow effect with shadow behind and multiple layers/intensities */
 .glowing span:nth-child(3n + 3)::before {
-  /* Setting the background color of the pseudo-element to a specific RGBA value */
   background: rgba(0, 226, 255, 1);
-  /* Adding a box shadow effect to the pseudo-element with multiple layers and varying intensities */
+
   box-shadow: 0 0 20px rgba(0, 226, 255, 1), 0 0 40px rgba(0, 226, 255, 1),
     0 0 60px rgba(0, 226, 255, 1), 0 0 80px rgba(0, 226, 255, 1),
     0 0 0 8px rgba(0, 226, 255, 0.1);
 }
 
-/* CSS rule for elements with the class "glowing" and a child element of "span" at positions that satisfy the formula (3n + 1) */
+/* Applying animation "animate": duration 20 seconds, alternate direction, infinite repetition */
 .glowing span:nth-child(3n + 1) {
-  /* Applying an animation called "animate" with a duration of 20 seconds, alternate direction, and infinite repetition */
   animation: animate 20s alternate infinite;
 }
 
-/* CSS rule for elements with the class "glowing" and a child element of "span" at positions that satisfy the formula (3n + 2) */
+/* Applying animation "animate-reverse": duration 10 seconds, alternate direction, infinite repetition */
 .glowing span:nth-child(3n + 2) {
-  /* Applying an animation called "animate-reverse" with a duration of 10 seconds, alternate direction, and infinite repetition */
   animation: animate-reverse 10s alternate infinite;
 }
-
-/* CSS rule for elements with the class "glowing" and a child element of "span" at positions that satisfy the formula (3n + 3) */
+/* Applying animation "animate": duration 8 seconds, alternate direction, infinite repetition */
 .glowing span:nth-child(3n + 3) {
-  /* Applying an animation called "animate" with a duration of 8 seconds, alternate direction, and infinite repetition */
   animation: animate 8s alternate infinite;
 }
 
-/* CSS keyframes rule for the "animate" animation */
-@keyframes animate {
-  /* Keyframe at 0% of the animation */
-  0% {
-    /* Applying a transformation with a rotation of 180 degrees */
-    transform: rotate(180deg);
-  }
-
-  /* Keyframe at 50% of the animation */
-  50% {
-    /* Applying a transformation with no rotation (0 degrees) */
-    transform: rotate(0deg);
-  }
-
-  /* Keyframe at 100% of the animation */
-  100% {
-    /* Applying a transformation with a full rotation of 360 degrees */
-    transform: rotate(360deg);
-  }
-}
-
-/* CSS keyframes rule for the "animate-reverse" animation */
-@keyframes animate-reverse {
-  /* Keyframe at 0% of the animation */
-  0% {
-    /* Applying a transformation with a full rotation of 360 degrees */
-    transform: rotate(360deg);
-  }
-
-  /* Keyframe at 50% of the animation */
-  50% {
-    /* Applying a transformation with a rotation of 180 degrees */
-    transform: rotate(180deg);
-  }
-
-  /* Keyframe at 100% of the animation */
-  100% {
-    /* Applying a transformation with no rotation (0 degrees) */
-    transform: rotate(0deg);
-  }
-}
-
-/* CSS rule for applying styles to all elements inside the "quotes-container" class */
-.quotes-container * {
-  /* Setting padding to 0 */
-  padding: 0;
-  /* Setting margin to 0 */
-  margin: 0;
-  /* Setting box-sizing to border-box */
-  box-sizing: border-box;
-  /* Applying the "Poppins" font family as the font */
-  font-family: "Poppins", sans-serif;
-}
-
-/* CSS rule for elements with the class "wrapper" */
+/* Container of quote box */
+/* Position in center of viewport */
+/* Set width to 400px (avoid too much line breaks of text) */
 .wrapper {
-  /* Setting width to 400 pixels */
   width: 400px;
-  /* Positioning the element absolutely */
   position: absolute;
-  /* Translating the element to the center horizontally and vertically */
   transform: translate(-50%, -50%);
-  /* Setting the top position to 50% */
   top: 50%;
-  /* Setting the left position to 50% */
   left: 50%;
 }
 
-/* CSS rule for elements with the class "container" */
+/* Quote box styling */
+/* Position relative to .wrapper */
+/* Don't exceed 900px and prevent overflow (large quotes) */
+/* Initial colour/box shadow green shades, then rotate through colour wheel, no speed fluctuations */
+/* Round corners */
+/* Center text and horizontally center element */
 .container {
-  /* Positioning the element relatively */
   position: relative;
-  /* Setting overflow to hidden */
   overflow: hidden;
-  /* Setting the maximum width to 800 pixels */
   max-width: 800px;
-  /* Setting the background color to #1fa73f */
-  background-color: #1fa73f;
-  /* Setting padding to 50 pixels on the top and bottom, and 40 pixels on the left and right */
+  background-color: none;
   padding: 50px 40px;
-  /* Applying a box shadow with specific properties */
-  box-shadow: 0 20px 65px rgba(38, 210, 110, 0.5);
-  /* Positioning the element relatively (redundant declaration) */
-  position: relative;
-  /* Applying a border radius of 8 pixels */
+  box-shadow: 0 20px 65px #15732b;
   border-radius: 8px;
-  /* Aligning the text to the center */
   text-align: center;
-  /* Centering the element horizontally using auto margins */
   margin: 0 auto;
+  animation: colorChange 5s linear infinite;
 }
 
-/* CSS rule for the "after" pseudo-element of elements with the class "container" */
-.container:after {
-  /* Adding content to the pseudo-element */
-  content: "";
-  /* Positioning the pseudo-element absolutely */
-  position: absolute;
-  /* Setting the width to 80% of the container */
-  width: 80%;
-  /* Setting the height to 120% of the container */
-  height: 120%;
-  /* Setting the z-index to -1 to position it behind the container */
-  z-index: -1;
-  /* Shifting the top position by 10% */
-  top: -10%;
-  /* Shifting the left position by 10% */
-  left: 10%;
-}
-
-
-/* CSS rule for <p> elements inside elements with the class "container" */
+/* Styling quote text */
+/* small font and line height (consider long quotes) */
 .container p {
-  /* Setting the line height to 2 */
   line-height: 2;
-  /* Setting the text color to #e8f4f2 */
-  color: #e8f4f2;
-  /* Setting the font size to 18 pixels */
-  font-size: 18px;
-}
-
-/* CSS rule for <h3> elements inside elements with the class "container" */
-.container h3 {
-  /* Setting the text color to #ffffff */
-  color: #ffffff;
-  /* Setting the top margin to 20 pixels, right and bottom margins to 0, and the left margin to 60 pixels */
-  margin: 20px 0 60px 0;
-  /* Setting the font weight to 600 (bold) */
-  font-weight: 600;
-  /* Transforming the text to capitalize the first letter of each word */
-  text-transform: capitalize;
-}
-
-/* CSS rule for <button> elements */
-.container button {
-  /* Setting the background color to #ffffff */
-  background-color: #ffffff;
-  /* Removing the border */
-  border: none;
-  /* Setting padding to 15 pixels on the top and bottom, and 45 pixels on the left and right */
-  padding: 15px 45px;
-  /* Applying a border radius of 5 pixels */
-  border-radius: 5px;
-  /* Setting the font size to 18 pixels */
-  font-size: 18px;
-  /* Setting the font weight to 600 (bold) */
-  font-weight: 600;
-  /* Setting the text color to #4d9e1e */
   color: #4d9e1e;
-  /* Setting the cursor to a pointer on hover */
+  font-size: 18px;
+}
+
+/* Styling author text */
+/* Create visually pleasing space between quote text and button */
+.container h3 {
+  color: #4d9e1e;
+  margin: 20px 0px 60px 0;
+  font-weight: 600;
+}
+
+/* Styling button */
+/* Create rounded rectangular shape */
+/* Text colour to start as initial green and change with container animation */
+/* Indicate interaction with pointer */
+.container button {
+  background-color: #ffffff;
+  border: none;
+  padding: 15px 45px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #4d9e1e;
   cursor: pointer;
 }
 
-/* CSS rule for elements with the class "p" */
-.p {
-  /* Setting padding to 0 on the top and bottom, and 20 pixels on the left and right */
+/* When no quote loaded: padding 0 top and bottom, 20px left and right */
+.noLoadDisplay {
   padding: 0 20px;
+}
+
+/* Original colour at initial state */
+/* Go through colour wheel */
+/* Rotate to enhance movement */
+@keyframes colorChangeRotate {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* Original colour at initial state */
+/* Go through colour wheel */
+@keyframes colorChange {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* Start of animation, rotate 180 */
+/* Halfway, no rotation */
+/* End of animation, rotate 360 (180 back to starting point)*/
+@keyframes animate {
+  0% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Start of animation, rotate 360 */
+/* Halfway, rotate 180 */
+/* End of animation, no rotation*/
+@keyframes animate-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Media query for smartphones */
+/* Expand to fill the entire width */
+@media (max-width: 700px) {
+  .glowing {
+    min-width: 100%;
+  }
 }

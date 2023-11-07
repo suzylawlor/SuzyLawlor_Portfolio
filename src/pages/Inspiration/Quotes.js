@@ -1,40 +1,62 @@
-// Import the useState hook from the React library
+// API exercise
+// Scoped styling
+
 import { useState } from "react";
-// Import the CSS styles from the quotes.module.css file
+
 import styles from "./quotes.module.css";
 
-// Define a functional component called QuoteGenerator
+// Create a functional component and start building our quote generator
 const QuoteGenerator = () => {
-  // Define a functional component called QuoteGenerator
-  const [quote, setQuote] = useState(""); // State variable to store the quote
-  const [author, setAuthor] = useState(""); // State variable to store the author
-  const [loaded, setLoaded] = useState(false); // State variable to track if data has been loaded
-  const [buttonClicked, setButtonClicked] = useState(false); // State variable to track if the button has been clicked
+  // useState hook to create and initialise the state variables:
+
+  // State variable for quote
+  //'quote' to store quote. Initial state set to empty
+  //'setQuote' function to update 'quote'
+  const [quote, setQuote] = useState("");
+
+  // State variable for author
+  // 'author' to store name of quotee. Initial state set to empty
+  // 'setAuthor' function to update 'author'
+  const [author, setAuthor] = useState("");
+
+  // State variable for loaded
+  //'loaded' to store true/false information. Initial state set to false
+  //'setLoaded' function to update 'loaded'
+  const [loaded, setLoaded] = useState(false);
+
+  // State variable for buttonClicked
+  // 'buttonClicked' to store clicked/unclicked information. Initial state set to unclicked
+  // 'setButtonClicked' function to update 'buttonClicked'
+  const [buttonClicked, setButtonClicked] = useState(false);
 
   // Define the URL for the quote API
   const url = "https://api.quotable.io/random";
 
-  // Define a function to fetch a random quote from the API
+  // Create function to fetch a random quote from the API
   const getQuote = () => {
-    fetch(url) // Send a GET request to the API
-      .then((data) => data.json()) // Parse the response as JSON
+    // Send a GET request to the API
+    fetch(url)
+      // Parse the response as JSON
+      .then((data) => data.json())
+      // Update the state variables with the fetched quote data
       .then((item) => {
-        // Update the state variables with the fetched quote data
         setQuote(item.content);
         setAuthor(item.author);
-        setLoaded(true); // Set loaded to true to indicate that data has been loaded
+        setLoaded(true);
       });
   };
 
-  // Define a function to handle the button click event
+  // Function to handle button click event
+  // When button is clicked:
   const handleClick = () => {
-    setButtonClicked(true); // Set buttonClicked to true
-    getQuote(); // Call the getQuote function to fetch a new quote
+    // Set buttonClicked to true
+    setButtonClicked(true);
+    // Call the getQuote function to fetch a new quote
+    getQuote();
   };
 
-  // Render the JSX elements
   return (
-    <>  
+    <>
       <div className={styles.glowing}>
         {/* Render span elements with an inline style defining CSS variable "--i" with a value of 1, 2 and 3 */}
         <span style={{ "--i": 1 }}></span>
@@ -53,30 +75,27 @@ const QuoteGenerator = () => {
       </div>
       <div className={styles.wrapper}>
         <div className={styles.container}>
-          <div className="quotes-container"></div>
-          {/* Render a conditional statement based on the "loaded" variable */}
+         
+          {/* Has the data been loaded? (handleClick function activated?) */}
           {loaded ? (
-            // If data has been loaded, display the quote and author
+            // If data has been loaded, render data from quote and author variables
+            // Include dash before author name
             <>
-              <p id="quote" className={styles.quote}>
-                {quote}
-              </p>
-              <h3 id="author" className={styles.author}>
-                - {author}
-              </h3>
+              <p>{quote}</p>
+              <h3>- {author}</h3>
             </>
           ) : (
-            // If data has not been loaded render a paragraph element with the class name from styles.p
-            // Render the appropriate text based on the "buttonClicked" variable */}
-            <p className={styles.p}>
+            // If data has not been loaded, render paragraph and text based on the "buttonClicked" variable
+            <p className={styles.noLoadDisplay}>
               {buttonClicked
-                ? "Fetching quote..." // Display "Fetching quote..." if the button has been clicked
-                : // Display "Are you ready to be inspired?" if the button has not been clicked
+                ? // Display if the button has been clicked
+                  "Fetching quote..."
+                : // Display if the button has not been clicked
                   "Are you ready to be inspired?"}
             </p>
           )}
-          {/* Render a button element with the id "btn", an onClick event handler assigned to "handleClick", and a class name from styles.button */}
-          <button id="btn" onClick={handleClick} className={styles.button}>
+          {/* Button assigned to handleClick function */}
+          <button onClick={handleClick} className={styles.button}>
             Get Quote
           </button>
         </div>
