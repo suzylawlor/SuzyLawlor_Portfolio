@@ -7,17 +7,14 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    if (router.pathname === "/ChatApp/chatPage") {
-      import("../styles/chats.css");
-      import("../styles/chatIndex.css");
-      import("../styles/auth.css");
-    } else if (router.pathname === "/Keyboard") {
+     if (router.pathname === "/Keyboard") {
       import("../styles/keyboard.css");
     } else if (router.pathname === "/resume") {
       import("../styles/resume.css");
     } else if (router.pathname === "/To-do/todoPage") {
       import("../styles/todo.css");
-    } 
+    }
+    
     
   }, [router.pathname]);
 

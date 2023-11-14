@@ -5,7 +5,7 @@ import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { AiOutlineCheck } from "react-icons/ai";
 import { FaMusic } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
-import { AiOutlineMessage } from "react-icons/ai";
+
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
@@ -431,26 +431,6 @@ function Home() {
                 </div>
                 {/* Set the position of the element to absolute, top and left position of the element to 0 */}
                 {/* Sets the width and height of the element to 100% */}
-                {/* Vertically center the flex items, horizontally centers the flex items within the container */}
-                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center"></div>
-              </a>
-            </div>
-            {/* Set width of the element to 100%, to 1/2 when screen size is md, to 1/5 when the screen size is lg */}
-            {/* Set position of the element to relative  */}
-            <div className="w-full md:w-1/2 lg:w-1/5 relative">
-              {/* Create an anchor element with a hyperlink to "/chatPage" and a target attribute set to "_blank" */}
-              {/* Set the display property of the element to block */}
-              <a
-                href="./ChatApp/chatPage"
-                target="_blank"
-                className="block relative"
-              >
-                {/* Round the corners of the element, hide any content that overflows the element */}
-                {/* Vertically center the flex items, horizontally centers the flex items within the container */}
-                {/* Display a message bubble icon with a pink color and size of 9xl, or a blue color for dark mode */}
-                <div className="rounded-lg overflow-hidden flex items-center justify-center">
-                  <AiOutlineMessage className="text-blue-500 text-9xl dark:text-blue-400" />
-                </div>
                 {/* Vertically center the flex items, horizontally centers the flex items within the container */}
                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center"></div>
               </a>
