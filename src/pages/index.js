@@ -187,7 +187,7 @@ function Home() {
               style={{ position: "relative", zIndex: 1 }}
               className="text-xl md:text-4xl py-2 text-gray-900 dark:text-orange-100"
             >
-              Developer and designer.
+              Developer and Designer
             </h3>
 
             {/* Create a p element */}
@@ -202,7 +202,7 @@ function Home() {
               className="text-lg md:text-3xl sm:text-2xl py-5 leading-8 text-gray-950 dark:text-gray-200 max-w-xl mx-auto"
             >
               Web Developer with a degree in Fine Art and a background in
-              digital content creation and marketing design.
+              digital content creation and marketing design
             </p>
 
             {/* Create a div element */}
@@ -263,7 +263,7 @@ function Home() {
         <section className="px-4 md:px-10">
           <div className="text-center">
             <h3 className="text-2xl py-10 dark:text-gray-50">
-              A bit about me.
+              A bit about me
             </h3>
           </div>
           {/* Create a div element */}
@@ -363,7 +363,7 @@ function Home() {
           {/* Create a div with centered text and an inner h3 of text size 3xl with a top and bottom padding of 20 */}
           <div className="text-center">
             <h3 className="text-3xl py-20 dark:text-orange-100">
-              Some projects to play with.
+              Some projects to play with
             </h3>
           </div>
           {/* Create a div element */}

@@ -109,12 +109,14 @@ function Resume() {
                 </h3>
                 <ul>
                   <li>
-                    <span>Wordpress Developer</span>
-                    <small>Bright Heart Education</small>
-                    <small>2023 (temporary contract)</small>
+                    <span>Web Developer</span>
+                    <small>Off The Curriculum</small>
+                    <small>2023 - 2024</small>
                   </li>
                   <li>
-                    <span>Graphic Designer/Content Writer</span>
+                    <span>Graphic Designer/Content Writer
+                      
+                    </span>
                     <small>AMP Capital</small>
                     <small>2018 - 2022</small>
                   </li>
@@ -152,7 +154,7 @@ function Resume() {
                 communications and social media campaigns. Dedicated to
                 delivering clean, functional, and visually appealing web
                 solutions to clients. Currently developing and maintaining
-                Wordpress websites for the private education sector. Seeking an
+                websites for the private charity sector. Seeking an
                 opportunity to join a dynamic team and contributing to the
                 success of the organisation.
               </div>
